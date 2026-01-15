@@ -74,33 +74,109 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Nuestros Servicios</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Servicios Industriales</h2>
               <p className="text-lg sm:text-xl text-gray-600 px-4">Soluciones completas para tus proyectos</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative w-full h-48">
+                  <Image 
+                    src="/images/WhatsApp Image 2026-01-15 at 16.01.47.jpeg" 
+                    alt="Mantención plantas de tratamientos" 
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-yellow-100 rounded-lg">
-                      <Clock className="w-8 h-8 text-yellow-600" />
-                    </div>
-                    <CardTitle className="text-2xl">Arriendo por Horas</CardTitle>
-                  </div>
-                  <CardDescription className="text-base">
-                    Ideal para proyectos de corta duración. Incluye operador y combustible.
+                  <CardTitle className="text-xl">Mantención Plantas de Tratamientos</CardTitle>
+                  <CardDescription className="text-sm">
+                    Servicios especializados de mantenimiento para plantas de tratamiento de aguas
                   </CardDescription>
                 </CardHeader>
               </Card>
-              <Card>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative w-full h-48">
+                  <Image 
+                    src="/images/WhatsApp Image 2026-01-15 at 16.02.19.jpeg" 
+                    alt="Traslado de residuos con resolución sanitaria" 
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-yellow-100 rounded-lg">
-                      <CheckCircle className="w-8 h-8 text-yellow-600" />
-                    </div>
-                    <CardTitle className="text-2xl">Arriendo Mensual</CardTitle>
-                  </div>
-                  <CardDescription className="text-base">
-                    Mejores precios para proyectos largos. Incluye traslado, operador y combustible.
+                  <CardTitle className="text-xl">Traslado de Residuos con Resolución Sanitaria</CardTitle>
+                  <CardDescription className="text-sm">
+                    Transporte seguro y certificado de residuos con todas las autorizaciones
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative w-full h-48">
+                  <Image 
+                    src="/images/WhatsApp Image 2026-01-15 at 16.02.56.jpeg" 
+                    alt="Proyectos piping Hdpe y aceros" 
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">Proyectos Piping HDPE y Aceros</CardTitle>
+                  <CardDescription className="text-sm">
+                    Instalación y mantenimiento de sistemas de tuberías en HDPE y acero
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative w-full h-48">
+                  <Image 
+                    src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" 
+                    alt="Obras civiles" 
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">Obras Civiles</CardTitle>
+                  <CardDescription className="text-sm">
+                    Construcción y desarrollo de proyectos de infraestructura civil
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative w-full h-48">
+                  <Image 
+                    src="/images/WhatsApp Image 2026-01-15 at 16.04.17.jpeg" 
+                    alt="Arriendo de maquinaria" 
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">Arriendo de Maquinaria</CardTitle>
+                  <CardDescription className="text-sm">
+                    Amplia flota de maquinaria pesada disponible para arriendo
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative w-full h-48">
+                  <Image 
+                    src="/images/WhatsApp Image 2026-01-15 at 16.05.57.jpeg" 
+                    alt="Transporte" 
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">Transporte</CardTitle>
+                  <CardDescription className="text-sm">
+                    Servicios de transporte especializado para tus necesidades
                   </CardDescription>
                 </CardHeader>
               </Card>
