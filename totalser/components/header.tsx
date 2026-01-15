@@ -59,7 +59,7 @@ export function Header() {
             </text>
             <rect 
               x="135" 
-              y="6" 
+              y="3" 
               width="175" 
               height="35" 
               fill="#FF6B35" 
@@ -67,7 +67,7 @@ export function Header() {
             />
             <text 
               x="145" 
-              y="32" 
+              y="29" 
               fontFamily="Arial Black, Arial, sans-serif" 
               fontSize="19" 
               fontWeight="900" 
