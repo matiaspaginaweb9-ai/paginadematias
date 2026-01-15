@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-10 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 md:gap-10 mb-6 sm:mb-10 md:mb-12">
           <div className="space-y-2.5 sm:space-y-4">
-            <h3 className="text-base sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+            <h3 className="text-base sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
               TOTAL SERVICE
             </h3>
             <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
@@ -36,23 +36,23 @@ export function Footer() {
           </div>
           
           <div className="space-y-2.5 sm:space-y-4">
-            <h4 className="font-bold text-sm sm:text-base md:text-lg text-yellow-400">Enlaces Rápidos</h4>
+            <h4 className="font-bold text-sm sm:text-base md:text-lg text-[#FF6B35]">Enlaces Rápidos</h4>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
               <li>
-                <Link href="/" className="hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group py-1">
-                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/acerca-de" className="hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group py-1">
-                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Acerca de
                 </Link>
               </li>
               <li>
-                <Link href="/catalogo" className="hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group py-1">
-                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/catalogo" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Catálogo
                 </Link>
               </li>
@@ -60,14 +60,14 @@ export function Footer() {
           </div>
           
           <div className="space-y-2.5 sm:space-y-4">
-            <h4 className="font-bold text-sm sm:text-base md:text-lg text-yellow-400">Contacto</h4>
+            <h4 className="font-bold text-sm sm:text-base md:text-lg text-[#FF6B35]">Contacto</h4>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
               <li>
                 <a 
                   href="https://wa.me/56961582373" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 sm:gap-3 hover:text-yellow-400 transition-all duration-200 group py-1"
+                  className="flex items-center gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-1"
                 >
                   <div className="p-1.5 sm:p-2 bg-green-500/20 rounded-lg group-hover:bg-green-500/30 transition-colors flex-shrink-0">
                     <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
@@ -80,13 +80,21 @@ export function Footer() {
               <li>
                 <a 
                   href="mailto:TSERVICESSPA@GMAIL.COM" 
-                  className="flex items-center gap-2.5 sm:gap-3 hover:text-yellow-400 transition-all duration-200 group py-1"
+                  className="flex items-center gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-1"
                 >
                   <div className="p-1.5 sm:p-2 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors flex-shrink-0">
                     <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-400" />
                   </div>
                   <span className="break-all text-[10px] sm:text-xs md:text-sm">TSERVICESSPA@GMAIL.COM</span>
                 </a>
+              </li>
+              <li>
+                <div className="flex items-start gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-1">
+                  <div className="p-1.5 sm:p-2 bg-orange-500/20 rounded-lg group-hover:bg-orange-500/30 transition-colors flex-shrink-0 mt-0.5">
+                    <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FF6B35]" />
+                  </div>
+                  <span className="text-[10px] sm:text-xs md:text-sm break-words">O&apos;HIGGINS 480 OF 5, QUILLOTA</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -103,10 +111,10 @@ export function Footer() {
                 href="https://github.com/rxzkie" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 sm:gap-2 font-semibold text-yellow-400 hover:text-yellow-300 transition-all duration-300 hover:scale-105 group"
+                className="flex items-center gap-1.5 sm:gap-2 font-semibold text-[#FF6B35] hover:text-[#FF5722] transition-all duration-300 hover:scale-105 group"
               >
                 <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:rotate-12 transition-transform" />
-                <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
                   rxzkie
                 </span>
               </a>

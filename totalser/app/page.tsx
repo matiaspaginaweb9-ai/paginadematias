@@ -18,65 +18,40 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+PHBhdGggZD0iTTAgMGg2MHY2MEgweiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wNSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-20"></div>
+      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-[600px] flex items-center">
+        <div className="absolute inset-0">
+          <Image 
+            src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
+            alt="Total Service SPA" 
+            fill
+            className="object-cover opacity-30"
+            priority
+            unoptimized
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-gray-900/80"></div>
         <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-4">
-              Maquinaria Pesada
-              <span className="block bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                de Alta Calidad
+              <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
+                Servicios Industriales
               </span>
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
-              Soluciones confiables para construcción, minería e infraestructura. 
-              Equipos modernos con operadores calificados.
+              Soluciones completas para construcción, minería e infraestructura. 
+              Maquinaria pesada, plantas de tratamiento, traslado de residuos y más.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+              <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <Link href="/catalogo" className="flex items-center justify-center">
                   Ver Catálogo
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <Link href="/acerca-de">Conocer Más</Link>
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-2 hover:border-yellow-500 transition-colors">
-              <CardHeader>
-                <Truck className="w-12 h-12 text-yellow-500 mb-4" />
-                <CardTitle className="text-2xl">Amplia Flota</CardTitle>
-                <CardDescription className="text-base">
-                  Retroexcavadoras, excavadoras, grúas horquilla y más equipos en excelente estado
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="border-2 hover:border-yellow-500 transition-colors">
-              <CardHeader>
-                <Wrench className="w-12 h-12 text-yellow-500 mb-4" />
-                <CardTitle className="text-2xl">Operadores Calificados</CardTitle>
-                <CardDescription className="text-base">
-                  Personal especializado con años de experiencia en maquinaria pesada
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="border-2 hover:border-yellow-500 transition-colors">
-              <CardHeader>
-                <Shield className="w-12 h-12 text-yellow-500 mb-4" />
-                <CardTitle className="text-2xl">Seguridad Garantizada</CardTitle>
-                <CardDescription className="text-base">
-                  Cumplimos con los más altos estándares de seguridad y calidad
-                </CardDescription>
-              </CardHeader>
-            </Card>
           </div>
         </div>
       </section>
@@ -206,12 +181,12 @@ export default function Home() {
               Contáctanos y obtén una cotización personalizada
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+              <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <a href="https://wa.me/56961582373">
                   Contactar por WhatsApp
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <Link href="/catalogo">Ver Catálogo Completo</Link>
               </Button>
             </div>

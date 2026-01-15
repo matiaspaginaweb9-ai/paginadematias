@@ -104,8 +104,8 @@ export default function Catalogo() {
           </div>
           <div className="w-full md:w-3/5">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">CAMIÓN ASPIRADOR</h2>
-            <div className="bg-yellow-400 px-3 py-1.5 mb-2 inline-block">
-              <p className="text-black font-bold text-sm">CAPACIDAD 8.000 KG</p>
+            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
+              <p className="text-white font-bold text-sm">CAPACIDAD 8.000 KG</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
               <p>Lodos y otros</p>
@@ -149,8 +149,8 @@ export default function Catalogo() {
           </div>
           <div className="w-full md:w-3/5">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">EXCAVADORA</h2>
-            <div className="bg-yellow-400 px-3 py-1.5 mb-2 inline-block">
-              <p className="text-black font-bold text-sm">20 TON</p>
+            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
+              <p className="text-white font-bold text-sm">20 TON</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
               <p>Incluye operador combustible y traslado en valor mes</p>
@@ -172,8 +172,8 @@ export default function Catalogo() {
           </div>
           <div className="w-full md:w-3/5">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">GRÚA HORQUILA</h2>
-            <div className="bg-yellow-400 px-3 py-1.5 mb-2 inline-block">
-              <p className="text-black font-bold text-sm">DIESEL 3 TON</p>
+            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
+              <p className="text-white font-bold text-sm">DIESEL 3 TON</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
               <p>Incluye traslado en valor mes</p>
@@ -195,8 +195,8 @@ export default function Catalogo() {
           </div>
           <div className="w-full md:w-3/5">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">GRÚA HORQUILA</h2>
-            <div className="bg-yellow-400 px-3 py-1.5 mb-2 inline-block">
-              <p className="text-black font-bold text-sm">GAS- BENCINA 2.5 TON</p>
+            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
+              <p className="text-white font-bold text-sm">GAS- BENCINA 2.5 TON</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
               <p>Sin operador sin combustible</p>
@@ -219,8 +219,8 @@ export default function Catalogo() {
           </div>
           <div className="w-full md:w-3/5">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">RODILLO TRIPULADO</h2>
-            <div className="bg-yellow-400 px-3 py-1.5 mb-2 inline-block">
-              <p className="text-black font-bold text-sm">BOMAG 120</p>
+            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
+              <p className="text-white font-bold text-sm">BOMAG 120</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
               <p>Incluye traslado en valor mes</p>
@@ -243,8 +243,8 @@ export default function Catalogo() {
           </div>
           <div className="w-full md:w-3/5">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">MINICARGADOR</h2>
-            <div className="bg-yellow-400 px-3 py-1.5 mb-2 inline-block">
-              <p className="text-black font-bold text-sm">BOBCAT</p>
+            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
+              <p className="text-white font-bold text-sm">BOBCAT</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
               <p>Incluye operador, combustible y traslado en valor mes</p>

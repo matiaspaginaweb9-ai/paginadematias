@@ -30,7 +30,7 @@ export function Header() {
           </a>
           <a 
             href="mailto:TSERVICESSPA@GMAIL.COM" 
-            className="flex items-center gap-1.5 sm:gap-2 hover:text-yellow-400 transition-all duration-300 hover:scale-105 group"
+            className="flex items-center gap-1.5 sm:gap-2 hover:text-orange-400 transition-all duration-300 hover:scale-105 group"
           >
             <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
             <span className="hidden lg:inline font-medium text-xs sm:text-sm">TSERVICESSPA@GMAIL.COM</span>
@@ -38,11 +38,45 @@ export function Header() {
           </a>
         </div>
       </div>
-      <div className="container mx-auto flex items-center justify-between px-3 sm:px-4 h-14 sm:h-16 md:h-20">
-        <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group flex-shrink-0">
-          <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent group-hover:from-yellow-300 group-hover:to-yellow-500 transition-all duration-300">
-            TOTAL SERVICE
-          </span>
+      <div className="container mx-auto flex items-center justify-between px-3 sm:px-4 h-14 sm:h-16 md:h-20 gap-2 sm:gap-4">
+        <Link href="/" className="flex items-center group flex-shrink-0">
+          <svg 
+            className="h-8 sm:h-10 md:h-12 w-auto group-hover:opacity-90 transition-opacity" 
+            viewBox="0 0 320 45" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text 
+              x="0" 
+              y="32" 
+              fontFamily="Arial Black, Arial, sans-serif" 
+              fontSize="34" 
+              fontStyle="italic" 
+              fontWeight="900" 
+              fill="#FF6B35"
+            >
+              TOTAL
+            </text>
+            <rect 
+              x="135" 
+              y="6" 
+              width="175" 
+              height="35" 
+              fill="#FF6B35" 
+              rx="2"
+            />
+            <text 
+              x="145" 
+              y="32" 
+              fontFamily="Arial Black, Arial, sans-serif" 
+              fontSize="19" 
+              fontWeight="900" 
+              fill="white"
+              letterSpacing="0.5"
+            >
+              SERVICES
+            </text>
+          </svg>
         </Link>
         
         <div className="hidden md:flex items-center gap-6">
@@ -50,28 +84,28 @@ export function Header() {
             <NavigationMenuList className="flex items-center gap-1">
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className={cn("text-sm font-medium transition-all duration-300 hover:text-yellow-400 px-3 py-2 rounded-md hover:bg-yellow-50")}>
+                  <Link href="/" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")}>
                     Inicio
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-yellow-400 px-3 py-2 rounded-md hover:bg-yellow-50")}>
+                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")}>
                     Acerca de
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/catalogo" className={cn("text-sm font-medium transition-all duration-300 hover:text-yellow-400 px-3 py-2 rounded-md hover:bg-yellow-50")}>
+                  <Link href="/catalogo" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")}>
                     Catálogo
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <Button asChild className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+          <Button asChild className="bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             <Link href="/catalogo">Ver Catálogo</Link>
           </Button>
         </div>
@@ -94,26 +128,26 @@ export function Header() {
           <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 space-y-1.5 sm:space-y-2">
             <Link 
               href="/" 
-              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-yellow-50 hover:text-yellow-600 active:bg-yellow-100 transition-all duration-200 font-medium text-sm sm:text-base"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
             >
               Inicio
             </Link>
             <Link 
               href="/acerca-de" 
-              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-yellow-50 hover:text-yellow-600 active:bg-yellow-100 transition-all duration-200 font-medium text-sm sm:text-base"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
             >
               Acerca de
             </Link>
             <Link 
               href="/catalogo" 
-              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-yellow-50 hover:text-yellow-600 active:bg-yellow-100 transition-all duration-200 font-medium text-sm sm:text-base"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
             >
               Catálogo
             </Link>
-            <Button asChild className="w-full mt-3 sm:mt-4 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold text-sm sm:text-base py-2.5 sm:py-3">
+            <Button asChild className="w-full mt-3 sm:mt-4 bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold text-sm sm:text-base py-2.5 sm:py-3">
               <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)}>Ver Catálogo</Link>
             </Button>
           </div>

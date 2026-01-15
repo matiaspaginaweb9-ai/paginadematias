@@ -22,7 +22,7 @@ export default function AcercaDe() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold px-4">
-              Acerca de <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">Total Service</span>
+              Acerca de <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">Total Service</span>
             </h1>
             <p className="text-base sm:text-xl text-gray-300 px-4">
               Líderes en arriendo de maquinaria pesada con más de una década de experiencia
@@ -57,8 +57,8 @@ export default function AcercaDe() {
               <Card className="text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-yellow-100 rounded-full">
-                      <Truck className="w-8 h-8 text-yellow-600" />
+                    <div className="p-4 bg-orange-100 rounded-full">
+                      <Truck className="w-8 h-8 text-[#FF6B35]" />
                     </div>
                   </div>
                   <CardTitle className="text-xl">Equipos Modernos</CardTitle>
@@ -70,8 +70,8 @@ export default function AcercaDe() {
               <Card className="text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-yellow-100 rounded-full">
-                      <Users className="w-8 h-8 text-yellow-600" />
+                    <div className="p-4 bg-orange-100 rounded-full">
+                      <Users className="w-8 h-8 text-[#FF6B35]" />
                     </div>
                   </div>
                   <CardTitle className="text-xl">Personal Calificado</CardTitle>
@@ -83,8 +83,8 @@ export default function AcercaDe() {
               <Card className="text-center">
                 <CardHeader>
                   <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-yellow-100 rounded-full">
-                      <Award className="w-8 h-8 text-yellow-600" />
+                    <div className="p-4 bg-orange-100 rounded-full">
+                      <Award className="w-8 h-8 text-[#FF6B35]" />
                     </div>
                   </div>
                   <CardTitle className="text-xl">Calidad Garantizada</CardTitle>
@@ -101,7 +101,7 @@ export default function AcercaDe() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-yellow-500">
+            <Card className="border-2 border-[#FF6B35]">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl sm:text-3xl mb-4">Nuestra Misión</CardTitle>
                 <CardDescription className="text-base sm:text-lg">
@@ -131,7 +131,7 @@ export default function AcercaDe() {
                   <CardContent>
                     <a 
                       href="https://wa.me/56961582373" 
-                      className="text-yellow-400 hover:text-yellow-300 text-lg font-semibold"
+                      className="text-[#FF6B35] hover:text-[#FF5722] text-lg font-semibold"
                     >
                       +56 9 6158 2373
                     </a>
@@ -149,7 +149,7 @@ export default function AcercaDe() {
                   <CardContent>
                     <a 
                       href="mailto:TSERVICESSPA@GMAIL.COM" 
-                      className="text-yellow-400 hover:text-yellow-300 text-lg font-semibold"
+                      className="text-[#FF6B35] hover:text-[#FF5722] text-lg font-semibold"
                     >
                       TSERVICESSPA@GMAIL.COM
                     </a>
@@ -158,7 +158,7 @@ export default function AcercaDe() {
               </Card>
             </div>
             <div className="text-center mt-12">
-              <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+              <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <Link href="/catalogo">Ver Nuestro Catálogo</Link>
               </Button>
             </div>
