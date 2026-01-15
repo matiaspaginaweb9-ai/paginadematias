@@ -2,6 +2,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Mail, Truck, Users, Award, Target } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Acerca de Total Service SPA | Nuestra Empresa y Servicios",
+  description: "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia. Equipos modernos, operadores calificados y servicios de calidad. Contacto: +56 9 6158 2373",
+  openGraph: {
+    title: "Acerca de Total Service SPA",
+    description: "Líderes en arriendo de maquinaria pesada con años de experiencia en construcción, minería e infraestructura",
+    images: ["/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg"],
+  },
+};
 
 export default function AcercaDe() {
   return (

@@ -1,5 +1,16 @@
 import Image from "next/image";
 import { Mail } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Catálogo de Maquinaria Pesada | Total Service SPA",
+  description: "Catálogo completo de maquinaria pesada disponible: retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, rodillos, minicargadores. Dragado y mantención de plantas de tratamiento. Contacto: +56 9 6158 2373",
+  openGraph: {
+    title: "Catálogo de Maquinaria Pesada - Total Service SPA",
+    description: "Ver nuestro catálogo completo de maquinaria pesada disponible para arriendo",
+    images: ["/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg"],
+  },
+};
 
 const WhatsAppIcon = () => (
   <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">

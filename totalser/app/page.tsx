@@ -3,6 +3,17 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Truck, Wrench, Shield, Clock, CheckCircle } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Total Service SPA - Inicio | Arriendo de Maquinaria Pesada en Chile",
+  description: "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte. Contacto: +56 9 6158 2373",
+  openGraph: {
+    title: "Total Service SPA - Arriendo de Maquinaria Pesada",
+    description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más",
+    images: ["/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg"],
+  },
+};
 
 export default function Home() {
   return (
