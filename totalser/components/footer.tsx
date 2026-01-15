@@ -1,77 +1,111 @@
 import Link from "next/link";
-import { Github, Mail, MessageCircle } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+    <footer className="border-t bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white mt-auto">
+      <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-10 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 md:gap-10 mb-6 sm:mb-10 md:mb-12">
+          <div className="space-y-2.5 sm:space-y-4">
+            <h3 className="text-base sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               TOTAL SERVICE
             </h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
               Maquinaria pesada de alta calidad para tus proyectos de construcción, minería e infraestructura.
             </p>
+            <div className="flex gap-3 sm:gap-4 pt-1">
+              <a 
+                href="https://wa.me/56961582373" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 sm:p-2.5 bg-green-500 rounded-full hover:bg-green-600 active:bg-green-700 transition-all duration-300 hover:scale-110 active:scale-95 hover:shadow-lg flex-shrink-0"
+                aria-label="WhatsApp"
+              >
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </a>
+              <a 
+                href="mailto:TSERVICESSPA@GMAIL.COM" 
+                className="p-2 sm:p-2.5 bg-blue-500 rounded-full hover:bg-blue-600 active:bg-blue-700 transition-all duration-300 hover:scale-110 active:scale-95 hover:shadow-lg flex-shrink-0"
+                aria-label="Email"
+              >
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+              </a>
+            </div>
           </div>
-          <div>
-            <h4 className="font-semibold mb-4">Enlaces Rápidos</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+          
+          <div className="space-y-2.5 sm:space-y-4">
+            <h4 className="font-bold text-sm sm:text-base md:text-lg text-yellow-400">Enlaces Rápidos</h4>
+            <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
               <li>
-                <Link href="/" className="hover:text-yellow-400 transition-colors">
+                <Link href="/" className="hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group py-1">
+                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/acerca-de" className="hover:text-yellow-400 transition-colors">
+                <Link href="/acerca-de" className="hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group py-1">
+                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Acerca de
                 </Link>
               </li>
               <li>
-                <Link href="/catalogo" className="hover:text-yellow-400 transition-colors">
+                <Link href="/catalogo" className="hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group py-1">
+                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Catálogo
                 </Link>
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold mb-4">Contacto</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+          
+          <div className="space-y-2.5 sm:space-y-4">
+            <h4 className="font-bold text-sm sm:text-base md:text-lg text-yellow-400">Contacto</h4>
+            <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
               <li>
                 <a 
                   href="https://wa.me/56961582373" 
-                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 sm:gap-3 hover:text-yellow-400 transition-all duration-200 group py-1"
                 >
-                  <MessageCircle className="w-4 h-4 text-green-500" />
-                  +56 9 6158 2373
+                  <div className="p-1.5 sm:p-2 bg-green-500/20 rounded-lg group-hover:bg-green-500/30 transition-colors flex-shrink-0">
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                  </div>
+                  <span className="break-words">+56 9 6158 2373</span>
                 </a>
               </li>
               <li>
                 <a 
                   href="mailto:TSERVICESSPA@GMAIL.COM" 
-                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
+                  className="flex items-center gap-2.5 sm:gap-3 hover:text-yellow-400 transition-all duration-200 group py-1"
                 >
-                  <Mail className="w-4 h-4" />
-                  TSERVICESSPA@GMAIL.COM
+                  <div className="p-1.5 sm:p-2 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors flex-shrink-0">
+                    <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-400" />
+                  </div>
+                  <span className="break-all text-[10px] sm:text-xs md:text-sm">TSERVICESSPA@GMAIL.COM</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-gray-400">
+        
+        <div className="border-t border-gray-700/50 pt-4 sm:pt-6 md:pt-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2.5 sm:gap-4">
+            <p className="text-[10px] sm:text-xs md:text-sm text-gray-400 text-center sm:text-left">
               © {new Date().getFullYear()} Total Service. Todos los derechos reservados.
             </p>
-            <div className="flex items-center gap-2 text-sm text-gray-400">
+            <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs md:text-sm text-gray-400">
               <span>Desarrollado por</span>
               <a 
                 href="https://github.com/rxzkie" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 font-semibold text-yellow-400 hover:text-yellow-300 transition-colors"
+                className="flex items-center gap-1.5 sm:gap-2 font-semibold text-yellow-400 hover:text-yellow-300 transition-all duration-300 hover:scale-105 group"
               >
-                <Github className="w-4 h-4" />
+                <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:rotate-12 transition-transform" />
                 <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
                   rxzkie
                 </span>
