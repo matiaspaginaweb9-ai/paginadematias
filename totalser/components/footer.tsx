@@ -93,7 +93,7 @@ export function Footer() {
                   <div className="p-1.5 sm:p-2 bg-orange-500/20 rounded-lg group-hover:bg-orange-500/30 transition-colors flex-shrink-0 mt-0.5">
                     <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FF6B35]" />
                   </div>
-                  <span className="text-[10px] sm:text-xs md:text-sm break-words">O&apos;Higgins 480, Oficina 5, Quillota, Región de Valparaíso</span>
+                  <span className="text-[10px] sm:text-xs md:text-sm break-words">O&apos;Higgins 480, Dpto. Oficina 5, La Calera, Quillota, Región de Valparaíso</span>
                 </div>
               </li>
             </ul>

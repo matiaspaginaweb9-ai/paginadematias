@@ -42,7 +42,7 @@ export function Header() {
         <Link href="/" className="flex items-center group flex-shrink-0">
           <svg 
             className="h-5 w-auto sm:h-6 md:h-8 group-hover:opacity-90 transition-opacity" 
-            viewBox="0 0 240 28" 
+            viewBox="0 0 234 28" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -58,11 +58,11 @@ export function Header() {
               TOTAL
             </text>
             <polygon 
-              points="78,4 235,4 230,24 73,24" 
+              points="72,4 229,4 224,24 67,24" 
               fill="#FF6B35"
             />
             <text 
-              x="88" 
+              x="82" 
               y="20" 
               fontFamily="Arial Black, Arial, sans-serif" 
               fontSize="18" 

@@ -185,7 +185,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-4">
               <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
-                Arriendo de Maquinaria Pesada en Chile
+                Servicios Industriales
               </span>
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
@@ -210,7 +210,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Servicios de Arriendo de Maquinaria Pesada en Chile</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Nuestros Servicios</h2>
               <p className="text-lg sm:text-xl text-gray-600 px-4">Soluciones completas para construcción, minería e infraestructura. Equipos modernos con operadores calificados y servicio de traslado incluido.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -331,7 +331,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold px-4">
-              Arriendo de Maquinaria Pesada en Chile - Cotiza Ahora
+              ¿Listo para comenzar tu proyecto?
             </h2>
             <p className="text-base sm:text-xl text-gray-300 px-4">
               Contáctanos por WhatsApp o email y obtén una cotización personalizada para arriendo de maquinaria pesada. Servicio disponible en Quillota y toda la región de Valparaíso.

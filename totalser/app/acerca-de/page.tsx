@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Acerca de - Nuestra Empresa y Servicios",
-  description: "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia. Equipos modernos, operadores calificados y servicios de calidad. Ubicados en Quillota, Chile. Contacto: +56 9 6158 2373",
+  description: "Conoce Total Service SPA: empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Desde 2017 en Quillota, Región de Valparaíso. Contacto: +56 9 6158 2373",
   keywords: ["Total Service SPA empresa", "maquinaria pesada Quillota", "arriendo maquinaria experiencia", "equipos modernos construcción", "operadores calificados", "servicios industriales Chile"],
   alternates: {
     canonical: "https://totalservicespa.cl/acerca-de",
@@ -90,10 +90,10 @@ export default function AcercaDe() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold px-4">
-              Acerca de <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">Total Service SPA</span> - Arriendo de Maquinaria Pesada en Chile
+              Acerca de <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">Total Service SPA</span>
             </h1>
             <p className="text-base sm:text-xl text-gray-300 px-4">
-              Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Más de una década de experiencia en Quillota y toda la región de Valparaíso
+              Empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Desde 2017 en Quillota, Región de Valparaíso
             </p>
           </div>
         </div>
@@ -104,13 +104,13 @@ export default function AcercaDe() {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed px-4">
-                Total Service SPA es una empresa líder especializada en el arriendo de maquinaria pesada para proyectos de construcción, minería e infraestructura en Chile. Con más de una década de experiencia en el mercado, nos hemos consolidado como una de las opciones más confiables para empresas que buscan equipos de alta calidad para arriendo en Quillota, Valparaíso y toda la región.
+                En TOTAL SERVICES SPA somos una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones el 01 de Junio del 2017 y estamos legalmente constituidos como SOCIEDAD POR ACCIONES, dentro del régimen de sociedades mercantiles y comerciales del país.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed px-4">
-                Contamos con una amplia flota de equipos modernos y en excelente estado, incluyendo retroexcavadoras con operador, excavadoras 20 ton, grúas horquilla diesel 3 ton y gas-bencina 2.5 ton, rodillos compactadores Bomag 120, minicargadores Bobcat y camiones aspiradores de 8,000 kg de capacidad. Todos nuestros equipos son sometidos a rigurosos controles de mantenimiento para garantizar su óptimo funcionamiento en cada proyecto.
+                Estamos comprometidos a acompañarte en cada paso, aportando valor real a tus proyectos y ayudándote a alcanzar tus objetivos con soluciones efectivas y personalizadas. Contamos con una amplia flota de equipos modernos y en excelente estado, incluyendo retroexcavadoras con operador, excavadoras 20 ton, grúas horquilla diesel 3 ton y gas-bencina 2.5 ton, rodillos compactadores Bomag 120, minicargadores Bobcat y camiones aspiradores de 8,000 kg de capacidad.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed px-4">
-                Nuestro compromiso es brindar soluciones eficientes y confiables para arriendo de maquinaria pesada, con operadores calificados y certificados, combustible incluido y servicio de traslado incluido en nuestros planes mensuales. Trabajamos con empresas de todos los tamaños, desde proyectos pequeños hasta grandes obras de construcción y minería, siempre con los más altos estándares de calidad y seguridad. Ofrecemos además servicios especializados como mantención de plantas de tratamiento de aguas, traslado de residuos con resolución sanitaria, y proyectos de piping HDPE y aceros.
+                Nuestro equipo de atención estará encantado de resolver tus dudas, ofrecerte información detallada y ayudarte a tomar la mejor decisión según tus necesidades. Ofrecemos servicios especializados como mantención de plantas de tratamiento de aguas, traslado de residuos con resolución sanitaria, proyectos de piping HDPE y aceros, obras civiles y transporte industrial. Puedes contactarnos para descubrir cómo podemos contribuir al crecimiento de tu negocio.
               </p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function AcercaDe() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 px-4">Valores de Total Service SPA - Arriendo de Maquinaria Pesada</h2>
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 px-4">Valores de Total Service SPA</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="text-center">
                 <CardHeader>
@@ -171,9 +171,9 @@ export default function AcercaDe() {
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-[#FF6B35]">
               <CardHeader className="text-center">
-                  <CardTitle className="text-2xl sm:text-3xl mb-4">Nuestra Misión - Arriendo de Maquinaria Pesada</CardTitle>
+                  <CardTitle className="text-2xl sm:text-3xl mb-4">Nuestra Misión</CardTitle>
                 <CardDescription className="text-base sm:text-lg">
-                  Proporcionar soluciones de arriendo de maquinaria pesada que impulsen el éxito de nuestros clientes en construcción, minería e infraestructura, ofreciendo equipos confiables y modernos, personal capacitado y certificado, y un servicio excepcional que supere las expectativas en cada proyecto. Estamos comprometidos con la excelencia en el arriendo de retroexcavadoras, excavadoras, grúas horquilla y toda nuestra flota de maquinaria pesada en Chile.
+                  Acompañarte en cada paso, aportando valor real a tus proyectos y ayudándote a alcanzar tus objetivos con soluciones efectivas y personalizadas. Estamos comprometidos con la excelencia en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada, ofreciendo equipos confiables y modernos, personal capacitado y certificado, y un servicio excepcional que supere las expectativas en cada proyecto.
                 </CardDescription>
               </CardHeader>
             </Card>
