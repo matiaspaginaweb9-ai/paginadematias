@@ -102,7 +102,7 @@ export default function RootLayout({
     "url": "https://totalservicespa.cl",
     "logo": "https://totalservicespa.cl/images/logo%20web.png",
     "image": "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
-    "description": "Total Service SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores, rodillos y minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte. Ubicados en La Calera, Quillota, Región de Valparaíso.",
+    "description": "Total Service SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores, rodillos y minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte. Ubicados en Quillota, Región de Valparaíso.",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+56961582373",
@@ -128,7 +128,7 @@ export default function RootLayout({
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "O'Higgins 480, Dpto. Oficina 5",
-      "addressLocality": "La Calera, Quillota",
+      "addressLocality": "Quillota",
       "addressRegion": "Valparaíso",
       "addressCountry": "CL",
     },
