@@ -3,12 +3,33 @@ import { Mail } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Catálogo de Maquinaria Pesada | Total Service SPA",
-  description: "Catálogo completo de maquinaria pesada disponible: retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, rodillos, minicargadores. Dragado y mantención de plantas de tratamiento. Contacto: +56 9 6158 2373",
+  title: "Catálogo de Maquinaria Pesada",
+  description: "Catálogo completo de maquinaria pesada disponible: retroexcavadoras, excavadoras 20 ton, grúas horquilla diesel y gas, camiones aspiradores 8,000 kg, rodillos tripulados Bomag 120, minicargadores Bobcat. Dragado y mantención de plantas de tratamiento. Contacto: +56 9 6158 2373",
+  keywords: ["catálogo maquinaria pesada", "arriendo retroexcavadora", "arriendo excavadora 20 ton", "grúa horquilla diesel", "camión aspirador", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
+  alternates: {
+    canonical: "https://totalservicespa.cl/catalogo",
+  },
   openGraph: {
     title: "Catálogo de Maquinaria Pesada - Total Service SPA",
-    description: "Ver nuestro catálogo completo de maquinaria pesada disponible para arriendo",
-    images: ["/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg"],
+    description: "Catálogo completo de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores y más equipos",
+    url: "https://totalservicespa.cl/catalogo",
+    siteName: "Total Service SPA",
+    locale: "es_CL",
+    type: "website",
+    images: [
+      {
+        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Catálogo de Maquinaria Pesada Total Service SPA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Catálogo de Maquinaria Pesada - Total Service SPA",
+    description: "Catálogo completo de maquinaria pesada disponible para arriendo",
+    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
 };
 
@@ -34,8 +55,126 @@ const ContactBar = () => (
 );
 
 export default function Catalogo() {
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Catálogo de Maquinaria Pesada - Total Service SPA",
+    "description": "Catálogo completo de maquinaria pesada disponible para arriendo",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Dragado de Plantas de Tratamiento de Aguas",
+          "description": "Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Mantención de Plantas de Tratamiento",
+          "description": "Mantenimiento preventivo y correctivo de plantas de tratamiento",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Camión Aspirador",
+          "description": "Camión aspirador con capacidad de 8,000 kg para lodos y otros residuos",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Retroexcavadora",
+          "description": "Arriendo de retroexcavadora con operador y combustible incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Excavadora 20 Ton",
+          "description": "Arriendo de excavadora 20 ton con operador, combustible y traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "name": "Grúa Horquilla Diesel 3 Ton",
+          "description": "Arriendo de grúa horquilla diesel 3 ton con traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Product",
+          "name": "Grúa Horquilla Gas 2.5 Ton",
+          "description": "Arriendo de grúa horquilla gas-bencina 2.5 ton sin operador ni combustible",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "Product",
+          "name": "Rodillo Tripulado Bomag 120",
+          "description": "Arriendo de rodillo tripulado Bomag 120 con traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "Product",
+          "name": "Minicargador Bobcat",
+          "description": "Arriendo de minicargador Bobcat con operador, combustible y traslado incluido",
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://totalservicespa.cl",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Catálogo",
+        "item": "https://totalservicespa.cl/catalogo",
+      },
+    ],
+  };
+
   return (
-    <div className="min-h-screen bg-stone-200" style={{backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='%23f5f5f5'/%3E%3Cpath d='M0 0h60v60H0z' fill='%23e5e5e5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3C/svg%3E")`}}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="min-h-screen bg-stone-200" style={{backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='%23f5f5f5'/%3E%3Cpath d='M0 0h60v60H0z' fill='%23e5e5e5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3C/svg%3E")`}}>
       <div className="bg-gray-800 text-white py-2.5 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-base font-semibold">CATÁLOGO TOTAL SERVICE</h1>
@@ -72,10 +211,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="/images/WhatsApp Image 2026-01-15 at 15.19.43.jpeg" 
-                alt="Mantención de Plantas de Tratamiento" 
+                alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -95,10 +235,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-                alt="Camión Aspirador" 
+                alt="Camión aspirador 8,000 kg capacidad - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -119,10 +260,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-                alt="Retroexcavadora" 
+                alt="Retroexcavadora con operador y combustible incluido - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -140,10 +282,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
-                alt="Excavadora" 
+                alt="Excavadora 20 ton con operador y combustible - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -163,10 +306,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                alt="Grúa Horquilla Diesel" 
+                alt="Grúa horquilla diesel 3 ton - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -186,10 +330,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80" 
-                alt="Grúa Horquilla Gas" 
+                alt="Grúa horquilla gas-bencina 2.5 ton - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -210,10 +355,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                alt="Rodillo Tripulado" 
+                alt="Rodillo tripulado Bomag 120 - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -234,10 +380,11 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                alt="Minicargador" 
+                alt="Minicargador Bobcat con operador - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
           </div>
@@ -254,6 +401,7 @@ export default function Catalogo() {
 
         <ContactBar />
       </div>
-    </div>
+      </div>
+    </>
   );
 }

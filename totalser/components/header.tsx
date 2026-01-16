@@ -41,35 +41,32 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between px-3 sm:px-4 h-14 sm:h-16 md:h-20 gap-2 sm:gap-4">
         <Link href="/" className="flex items-center group flex-shrink-0">
           <svg 
-            className="h-8 sm:h-10 md:h-12 w-auto group-hover:opacity-90 transition-opacity" 
-            viewBox="0 0 320 45" 
+            className="h-5 w-auto sm:h-6 md:h-8 group-hover:opacity-90 transition-opacity" 
+            viewBox="0 0 258 28" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
           >
             <text 
               x="0" 
-              y="32" 
+              y="20" 
               fontFamily="Arial Black, Arial, sans-serif" 
-              fontSize="34" 
+              fontSize="18" 
               fontStyle="italic" 
               fontWeight="900" 
               fill="#FF6B35"
             >
               TOTAL
             </text>
-            <rect 
-              x="135" 
-              y="3" 
-              width="175" 
-              height="35" 
-              fill="#FF6B35" 
-              rx="2"
+            <polygon 
+              points="78,4 253,4 248,24 73,24" 
+              fill="#FF6B35"
             />
             <text 
-              x="145" 
-              y="29" 
+              x="88" 
+              y="20" 
               fontFamily="Arial Black, Arial, sans-serif" 
-              fontSize="19" 
+              fontSize="18" 
+              fontStyle="italic"
               fontWeight="900" 
               fill="white"
               letterSpacing="0.5"
@@ -79,26 +76,26 @@ export function Header() {
           </svg>
         </Link>
         
-        <div className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6" aria-label="Navegación principal">
           <NavigationMenu>
             <NavigationMenuList className="flex items-center gap-1">
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")}>
+                  <Link href="/" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Ir al inicio">
                     Inicio
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")}>
+                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Conocer más sobre la empresa">
                     Acerca de
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/catalogo" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")}>
+                  <Link href="/catalogo" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Ver catálogo de maquinaria">
                     Catálogo
                   </Link>
                 </NavigationMenuLink>
@@ -106,9 +103,9 @@ export function Header() {
             </NavigationMenuList>
           </NavigationMenu>
           <Button asChild className="bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-            <Link href="/catalogo">Ver Catálogo</Link>
+            <Link href="/catalogo" aria-label="Ver catálogo completo de maquinaria pesada">Ver Catálogo</Link>
           </Button>
-        </div>
+        </nav>
 
         <button
           className="md:hidden p-2 -mr-2 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors flex-shrink-0"
@@ -124,12 +121,13 @@ export function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden border-t bg-white animate-in slide-in-from-top duration-300 shadow-lg">
+        <nav className="md:hidden border-t bg-white animate-in slide-in-from-top duration-300 shadow-lg" aria-label="Menú de navegación móvil">
           <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 space-y-1.5 sm:space-y-2">
             <Link 
               href="/" 
               className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Ir al inicio"
             >
               Inicio
             </Link>
@@ -137,6 +135,7 @@ export function Header() {
               href="/acerca-de" 
               className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Conocer más sobre la empresa"
             >
               Acerca de
             </Link>
@@ -144,14 +143,15 @@ export function Header() {
               href="/catalogo" 
               className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
+              aria-label="Ver catálogo de maquinaria"
             >
               Catálogo
             </Link>
             <Button asChild className="w-full mt-3 sm:mt-4 bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold text-sm sm:text-base py-2.5 sm:py-3">
-              <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)}>Ver Catálogo</Link>
+              <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)} aria-label="Ver catálogo completo de maquinaria pesada">Ver Catálogo</Link>
             </Button>
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );

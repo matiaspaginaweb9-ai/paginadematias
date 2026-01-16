@@ -35,29 +35,29 @@ export function Footer() {
             </div>
           </div>
           
-          <div className="space-y-2.5 sm:space-y-4">
+          <nav className="space-y-2.5 sm:space-y-4" aria-label="Enlaces rápidos">
             <h4 className="font-bold text-sm sm:text-base md:text-lg text-[#FF6B35]">Enlaces Rápidos</h4>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
               <li>
-                <Link href="/" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1">
+                <Link href="/" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ir al inicio">
                   <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1">
+                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Conocer más sobre la empresa">
                   <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Acerca de
                 </Link>
               </li>
               <li>
-                <Link href="/catalogo" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1">
+                <Link href="/catalogo" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ver catálogo de maquinaria">
                   <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Catálogo
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
           
           <div className="space-y-2.5 sm:space-y-4">
             <h4 className="font-bold text-sm sm:text-base md:text-lg text-[#FF6B35]">Contacto</h4>

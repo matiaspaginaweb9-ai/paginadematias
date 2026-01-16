@@ -5,18 +5,86 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Acerca de Total Service SPA | Nuestra Empresa y Servicios",
-  description: "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia. Equipos modernos, operadores calificados y servicios de calidad. Contacto: +56 9 6158 2373",
+  title: "Acerca de - Nuestra Empresa y Servicios",
+  description: "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia. Equipos modernos, operadores calificados y servicios de calidad. Ubicados en Quillota, Chile. Contacto: +56 9 6158 2373",
+  keywords: ["Total Service SPA empresa", "maquinaria pesada Quillota", "arriendo maquinaria experiencia", "equipos modernos construcción", "operadores calificados", "servicios industriales Chile"],
+  alternates: {
+    canonical: "https://totalservicespa.cl/acerca-de",
+  },
   openGraph: {
+    title: "Acerca de Total Service SPA - Nuestra Empresa",
+    description: "Líderes en arriendo de maquinaria pesada con años de experiencia en construcción, minería e infraestructura. Equipos modernos y operadores calificados.",
+    url: "https://totalservicespa.cl/acerca-de",
+    siteName: "Total Service SPA",
+    locale: "es_CL",
+    type: "website",
+    images: [
+      {
+        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Total Service SPA - Empresa líder en maquinaria pesada",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Acerca de Total Service SPA",
-    description: "Líderes en arriendo de maquinaria pesada con años de experiencia en construcción, minería e infraestructura",
-    images: ["/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg"],
+    description: "Líderes en arriendo de maquinaria pesada con años de experiencia",
+    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
 };
 
 export default function AcercaDe() {
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://totalservicespa.cl/acerca-de#webpage",
+    "url": "https://totalservicespa.cl/acerca-de",
+    "name": "Acerca de Total Service SPA",
+    "description": "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia",
+    "inLanguage": "es-CL",
+    "isPartOf": {
+      "@id": "https://totalservicespa.cl/#website",
+    },
+    "about": {
+      "@id": "https://totalservicespa.cl/#organization",
+    },
+    "breadcrumb": {
+      "@id": "https://totalservicespa.cl/acerca-de#breadcrumb",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://totalservicespa.cl",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Acerca de",
+        "item": "https://totalservicespa.cl/acerca-de",
+      },
+    ],
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="min-h-screen">
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-24">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+PHBhdGggZD0iTTAgMGg2MHY2MEgweiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iMC4wNSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -165,6 +233,7 @@ export default function AcercaDe() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

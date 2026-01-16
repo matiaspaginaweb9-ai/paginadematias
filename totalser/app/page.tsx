@@ -6,27 +6,102 @@ import { ArrowRight, Truck, Wrench, Shield, Clock, CheckCircle } from "lucide-re
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Total Service SPA - Inicio | Arriendo de Maquinaria Pesada en Chile",
-  description: "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte. Contacto: +56 9 6158 2373",
+  title: "Inicio - Arriendo de Maquinaria Pesada en Chile",
+  description: "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte. Equipos modernos con operadores calificados. Contacto: +56 9 6158 2373",
+  keywords: ["arriendo maquinaria pesada Chile", "servicios industriales", "retroexcavadoras arriendo", "excavadoras 20 ton", "mantención plantas tratamiento", "traslado residuos resolución sanitaria", "piping HDPE aceros", "obras civiles", "transporte industrial"],
+  alternates: {
+    canonical: "https://totalservicespa.cl/",
+  },
   openGraph: {
+    title: "Total Service SPA - Inicio | Arriendo de Maquinaria Pesada",
+    description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más. Equipos modernos con operadores calificados.",
+    url: "https://totalservicespa.cl",
+    siteName: "Total Service SPA",
+    locale: "es_CL",
+    type: "website",
+    images: [
+      {
+        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Total Service SPA - Servicios Industriales de Maquinaria Pesada",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Total Service SPA - Arriendo de Maquinaria Pesada",
     description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más",
-    images: ["/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg"],
+    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
 };
 
 export default function Home() {
+  const webpageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://totalservicespa.cl/#webpage",
+    "url": "https://totalservicespa.cl",
+    "name": "Total Service SPA - Arriendo de Maquinaria Pesada",
+    "description": "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte.",
+    "inLanguage": "es-CL",
+    "isPartOf": {
+      "@id": "https://totalservicespa.cl/#website",
+    },
+    "about": {
+      "@id": "https://totalservicespa.cl/#organization",
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+    },
+    "breadcrumb": {
+      "@id": "https://totalservicespa.cl/#breadcrumb",
+    },
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://totalservicespa.cl/#website",
+    "url": "https://totalservicespa.cl",
+    "name": "Total Service SPA",
+    "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura",
+    "publisher": {
+      "@id": "https://totalservicespa.cl/#organization",
+    },
+    "inLanguage": "es-CL",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://totalservicespa.cl/catalogo?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <div className="min-h-screen">
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-[600px] flex items-center">
         <div className="absolute inset-0">
           <Image 
             src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-            alt="Total Service SPA" 
+            alt="Maquinaria pesada Total Service SPA - Servicios industriales de construcción y minería" 
             fill
             className="object-cover opacity-30"
             priority
             unoptimized
+            sizes="100vw"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-gray-900/80"></div>
@@ -68,10 +143,11 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.01.47.jpeg" 
-                    alt="Mantención plantas de tratamientos" 
+                    alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
                     fill
                     className="object-cover"
                     unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
@@ -85,10 +161,11 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.02.19.jpeg" 
-                    alt="Traslado de residuos con resolución sanitaria" 
+                    alt="Traslado de residuos con resolución sanitaria - Total Service SPA" 
                     fill
                     className="object-cover"
                     unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
@@ -102,10 +179,11 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.02.56.jpeg" 
-                    alt="Proyectos piping Hdpe y aceros" 
+                    alt="Proyectos piping HDPE y aceros - Total Service SPA" 
                     fill
                     className="object-cover"
                     unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
@@ -119,10 +197,11 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" 
-                    alt="Obras civiles" 
+                    alt="Obras civiles e infraestructura - Total Service SPA" 
                     fill
                     className="object-cover"
                     unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
@@ -136,10 +215,11 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.04.17.jpeg" 
-                    alt="Arriendo de maquinaria" 
+                    alt="Arriendo de maquinaria pesada - Retroexcavadoras y excavadoras" 
                     fill
                     className="object-cover"
                     unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
@@ -153,10 +233,11 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.05.57.jpeg" 
-                    alt="Transporte" 
+                    alt="Transporte industrial y logística - Total Service SPA" 
                     fill
                     className="object-cover"
                     unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
@@ -193,6 +274,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
