@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     default: "Total Service SPA - Arriendo de Maquinaria Pesada | Construcción y Minería",
     template: "%s | Total Service SPA",
   },
-  description: "Total Service SPA ofrece arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos. Contacto: +56 9 6158 2373",
-  keywords: ["arriendo maquinaria pesada", "retroexcavadoras Chile", "excavadoras arriendo", "grúas horquilla", "maquinaria construcción", "maquinaria minería", "plantas tratamiento aguas", "traslado residuos", "piping HDPE", "obras civiles", "transporte industrial", "Total Service SPA", "arriendo equipos construcción", "maquinaria pesada Quillota", "servicios industriales Chile"],
+  description: "Total Service SPA: Líderes en arriendo de maquinaria pesada en Chile. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores 8,000 kg, rodillos, minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, piping HDPE, obras civiles. Ubicados en Quillota. Contacto: +56 9 6158 2373",
+  keywords: ["arriendo maquinaria pesada", "arriendo maquinaria pesada Chile", "retroexcavadoras Chile", "retroexcavadoras arriendo", "excavadoras arriendo", "excavadora 20 ton", "grúas horquilla", "grúa horquilla diesel", "grúa horquilla gas", "maquinaria construcción", "maquinaria minería", "plantas tratamiento aguas", "mantención plantas tratamiento", "traslado residuos", "traslado residuos resolución sanitaria", "camión aspirador", "piping HDPE", "piping aceros", "obras civiles", "transporte industrial", "Total Service SPA", "arriendo equipos construcción", "maquinaria pesada Quillota", "maquinaria pesada Valparaíso", "servicios industriales Chile", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
   authors: [{ name: "Total Service SPA", url: "https://totalservicespa.cl" }],
   creator: "Total Service SPA",
   publisher: "Total Service SPA",
@@ -102,7 +102,7 @@ export default function RootLayout({
     "url": "https://totalservicespa.cl",
     "logo": "https://totalservicespa.cl/images/logo%20web.png",
     "image": "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
-    "description": "Total Service SPA ofrece arriendo de maquinaria pesada para construcción, minería e infraestructura. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte.",
+    "description": "Total Service SPA ofrece arriendo de maquinaria pesada para construcción, minería e infraestructura en Chile. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores, rodillos y minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte. Ubicados en Quillota, Región de Valparaíso.",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+56961582373",
@@ -127,7 +127,7 @@ export default function RootLayout({
     "email": "TSERVICESSPA@GMAIL.COM",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "O'HIGGINS 480 OF 5",
+      "streetAddress": "O'Higgins 480, Oficina 5",
       "addressLocality": "Quillota",
       "addressRegion": "Valparaíso",
       "addressCountry": "CL",

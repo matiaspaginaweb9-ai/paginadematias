@@ -42,7 +42,7 @@ export function Header() {
         <Link href="/" className="flex items-center group flex-shrink-0">
           <svg 
             className="h-5 w-auto sm:h-6 md:h-8 group-hover:opacity-90 transition-opacity" 
-            viewBox="0 0 258 28" 
+            viewBox="0 0 240 28" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -58,7 +58,7 @@ export function Header() {
               TOTAL
             </text>
             <polygon 
-              points="78,4 253,4 248,24 73,24" 
+              points="78,4 235,4 230,24 73,24" 
               fill="#FF6B35"
             />
             <text 
@@ -88,15 +88,15 @@ export function Header() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Conocer más sobre la empresa">
-                    Acerca de
+                  <Link href="/catalogo" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Ver catálogo de maquinaria">
+                    Catálogo
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/catalogo" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Ver catálogo de maquinaria">
-                    Catálogo
+                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Conocer más sobre la empresa">
+                    Acerca de
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -132,20 +132,20 @@ export function Header() {
               Inicio
             </Link>
             <Link 
-              href="/acerca-de" 
-              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
-              onClick={() => setMobileMenuOpen(false)}
-              aria-label="Conocer más sobre la empresa"
-            >
-              Acerca de
-            </Link>
-            <Link 
               href="/catalogo" 
               className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
               onClick={() => setMobileMenuOpen(false)}
               aria-label="Ver catálogo de maquinaria"
             >
               Catálogo
+            </Link>
+            <Link 
+              href="/acerca-de" 
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="Conocer más sobre la empresa"
+            >
+              Acerca de
             </Link>
             <Button asChild className="w-full mt-3 sm:mt-4 bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold text-sm sm:text-base py-2.5 sm:py-3">
               <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)} aria-label="Ver catálogo completo de maquinaria pesada">Ver Catálogo</Link>

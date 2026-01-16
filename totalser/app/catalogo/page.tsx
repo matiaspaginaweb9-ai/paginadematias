@@ -177,7 +177,7 @@ export default function Catalogo() {
       <div className="min-h-screen bg-stone-200" style={{backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='%23f5f5f5'/%3E%3Cpath d='M0 0h60v60H0z' fill='%23e5e5e5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3C/svg%3E")`}}>
       <div className="bg-gray-800 text-white py-2.5 px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-base font-semibold">CATÁLOGO TOTAL SERVICE</h1>
+          <h1 className="text-base font-semibold">Catálogo de Arriendo de Maquinaria Pesada - Total Service SPA</h1>
         </div>
       </div>
 
@@ -197,11 +197,11 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">DRAGADO DE PLANTAS DE TRATAMIENTOS DE AGUAS</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Dragado de Plantas de Tratamiento de Aguas</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas</p>
-              <p>Equipos especializados para trabajos en plantas de tratamiento</p>
-              <p>Personal capacitado en operaciones de dragado</p>
+              <p>Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas. Soluciones completas para mantenimiento de plantas industriales.</p>
+              <p>Equipos especializados para trabajos en plantas de tratamiento. Maquinaria pesada adaptada para operaciones de dragado profesional.</p>
+              <p>Personal capacitado en operaciones de dragado. Operadores con experiencia certificada en plantas de tratamiento.</p>
             </div>
           </div>
         </div>
@@ -220,12 +220,12 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">MANTENCIÓN DE PLANTAS DE TRATAMIENTO</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Mantención de Plantas de Tratamiento de Aguas</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Mantenimiento preventivo y correctivo de plantas de tratamiento</p>
-              <p>Servicios de limpieza y desinfección</p>
-              <p>Inspección y diagnóstico de equipos</p>
-              <p>Reparación y reemplazo de componentes</p>
+              <p>Mantenimiento preventivo y correctivo de plantas de tratamiento de aguas. Servicios especializados para industrias y municipios.</p>
+              <p>Servicios de limpieza y desinfección profesional. Equipos especializados y productos certificados.</p>
+              <p>Inspección y diagnóstico completo de equipos. Evaluación técnica detallada de sistemas de tratamiento.</p>
+              <p>Reparación y reemplazo de componentes. Repuestos originales y técnicos especializados.</p>
             </div>
           </div>
         </div>
@@ -244,13 +244,13 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">CAMIÓN ASPIRADOR</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Camión Aspirador para Traslado de Residuos</h2>
             <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">CAPACIDAD 8.000 KG</p>
+              <p className="text-white font-bold text-sm">Capacidad 8.000 kg - Resolución Sanitaria Vigente</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Lodos y otros</p>
-              <p>Mínimo 6 horas</p>
+              <p>Traslado de lodos, residuos industriales y otros materiales. Servicio certificado con resolución sanitaria vigente.</p>
+              <p>Arriendo mínimo 6 horas. Servicio disponible para industrias, plantas de tratamiento y proyectos de construcción.</p>
             </div>
           </div>
         </div>
@@ -269,10 +269,10 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">RETROEXCAVADORA</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Retroexcavadora con Operador</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Incluye operador y combustible</p>
-              <p>Incluye traslado en valor mes</p>
+              <p>Arriendo de retroexcavadora incluye operador calificado y combustible. Equipos modernos en excelente estado para construcción y minería.</p>
+              <p>Incluye traslado en valor mensual. Servicio disponible en Quillota, Valparaíso y toda la región. Cotización personalizada según tus necesidades.</p>
             </div>
           </div>
         </div>
@@ -291,12 +291,12 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">EXCAVADORA</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Excavadora 20 Ton</h2>
             <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">20 TON</p>
+              <p className="text-white font-bold text-sm">20 Toneladas - Con Operador Calificado</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Incluye operador combustible y traslado en valor mes</p>
+              <p>Arriendo de excavadora 20 ton incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
             </div>
           </div>
         </div>
@@ -315,12 +315,12 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">GRÚA HORQUILA</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Grúa Horquilla Diesel</h2>
             <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">DIESEL 3 TON</p>
+              <p className="text-white font-bold text-sm">3 Toneladas - Diesel</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Incluye traslado en valor mes</p>
+              <p>Arriendo de grúa horquilla diesel 3 ton para manejo de carga en almacenes y construcción. Incluye traslado en valor mensual. Equipos modernos y certificados.</p>
             </div>
           </div>
         </div>
@@ -339,13 +339,13 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">GRÚA HORQUILA</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Grúa Horquilla Gas-Bencina</h2>
             <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">GAS- BENCINA 2.5 TON</p>
+              <p className="text-white font-bold text-sm">2.5 Toneladas - Gas o Bencina</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Sin operador sin combustible</p>
-              <p>Incluye traslado en valor mes</p>
+              <p>Arriendo de grúa horquilla gas-bencina 2.5 ton sin operador ni combustible incluido. Ideal para empresas que cuentan con operadores propios.</p>
+              <p>Incluye traslado en valor mensual. Equipo moderno disponible para arriendo en Quillota y región de Valparaíso.</p>
             </div>
           </div>
         </div>
@@ -364,13 +364,13 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">RODILLO TRIPULADO</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Rodillo Tripulado Bomag 120</h2>
             <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">BOMAG 120</p>
+              <p className="text-white font-bold text-sm">Bomag 120 - Compactación Profesional</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Incluye traslado en valor mes</p>
-              <p>Sin operador sin combustible</p>
+              <p>Arriendo de rodillo tripulado Bomag 120 para compactación de suelos en obras civiles. Incluye traslado en valor mensual.</p>
+              <p>Sin operador ni combustible incluido. Equipo moderno y certificado para proyectos de construcción e infraestructura.</p>
             </div>
           </div>
         </div>
@@ -389,12 +389,12 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">MINICARGADOR</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Minicargador Bobcat</h2>
             <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">BOBCAT</p>
+              <p className="text-white font-bold text-sm">Bobcat - Versátil y Compacto</p>
             </div>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Incluye operador, combustible y traslado en valor mes</p>
+              <p>Arriendo de minicargador Bobcat incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
             </div>
           </div>
         </div>

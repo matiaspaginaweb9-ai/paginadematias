@@ -65,8 +65,8 @@ export default function Home() {
     "@type": "WebSite",
     "@id": "https://totalservicespa.cl/#website",
     "url": "https://totalservicespa.cl",
-    "name": "Total Service SPA",
-    "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura",
+    "name": "Total Service SPA - Arriendo de Maquinaria Pesada",
+    "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores en Chile",
     "publisher": {
       "@id": "https://totalservicespa.cl/#organization",
     },
@@ -81,6 +81,74 @@ export default function Home() {
     },
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta arrendar una retroexcavadora en Chile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El costo del arriendo de retroexcavadora incluye operador calificado y combustible. Los precios varían según el tiempo de arriendo (mensual o diario). Contacta con nosotros por WhatsApp al +56 9 6158 2373 para una cotización personalizada según tus necesidades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen arriendo de excavadora 20 ton con operador?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, Total Service SPA ofrece arriendo de excavadora 20 ton con operador calificado, combustible y servicio de traslado incluido en el valor mensual. Nuestros operadores tienen años de experiencia en construcción y minería."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen grúas horquilla disponibles para arriendo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, ofrecemos grúas horquilla diesel 3 ton y gas-bencina 2.5 ton para arriendo. Todas incluyen traslado en el valor mensual. Consulta disponibilidad por WhatsApp al +56 9 6158 2373."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen servicio de traslado de residuos con resolución sanitaria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, Total Service SPA ofrece traslado de residuos con resolución sanitaria vigente. Contamos con camión aspirador de 8,000 kg de capacidad. Certificaciones y autorizaciones al día para servicio en toda la región de Valparaíso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde están ubicados? ¿Atienden en Quillota?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estamos ubicados en O'Higgins 480, Oficina 5, Quillota, Región de Valparaíso. Atendemos proyectos en Quillota y toda la región, además de proyectos a nivel nacional. Contacta con nosotros al +56 9 6158 2373."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué servicios de mantención ofrecen para plantas de tratamiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ofrecemos mantención preventiva y correctiva de plantas de tratamiento de aguas, dragado especializado, limpieza y desinfección. Personal capacitado y equipos especializados para trabajos en plantas de tratamiento."
+        }
+      }
+    ]
+  };
+
+  const aggregateRatingSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://totalservicespa.cl/#localbusiness",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "24",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
   return (
     <>
       <script
@@ -90,6 +158,14 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
       />
       <div className="min-h-screen">
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-[600px] flex items-center">
@@ -109,12 +185,11 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-4">
               <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
-                Servicios Industriales
+                Arriendo de Maquinaria Pesada en Chile
               </span>
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
-              Soluciones completas para construcción, minería e infraestructura. 
-              Maquinaria pesada, plantas de tratamiento, traslado de residuos y más.
+              Total Service SPA: Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, rodillos y más equipos modernos con operadores calificados. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
@@ -135,8 +210,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Servicios Industriales</h2>
-              <p className="text-lg sm:text-xl text-gray-600 px-4">Soluciones completas para tus proyectos</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Servicios de Arriendo de Maquinaria Pesada en Chile</h2>
+              <p className="text-lg sm:text-xl text-gray-600 px-4">Soluciones completas para construcción, minería e infraestructura. Equipos modernos con operadores calificados y servicio de traslado incluido.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
@@ -151,9 +226,9 @@ export default function Home() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">Mantención Plantas de Tratamientos</CardTitle>
+                  <CardTitle className="text-xl">Mantención de Plantas de Tratamiento de Aguas</CardTitle>
                   <CardDescription className="text-sm">
-                    Servicios especializados de mantenimiento para plantas de tratamiento de aguas
+                    Servicios especializados de mantenimiento preventivo y correctivo para plantas de tratamiento de aguas. Personal capacitado y equipos especializados.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -171,7 +246,7 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-xl">Traslado de Residuos con Resolución Sanitaria</CardTitle>
                   <CardDescription className="text-sm">
-                    Transporte seguro y certificado de residuos con todas las autorizaciones
+                    Transporte seguro y certificado de residuos con resolución sanitaria vigente. Camión aspirador 8,000 kg de capacidad. Certificaciones al día.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -189,7 +264,7 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-xl">Proyectos Piping HDPE y Aceros</CardTitle>
                   <CardDescription className="text-sm">
-                    Instalación y mantenimiento de sistemas de tuberías en HDPE y acero
+                    Instalación y mantenimiento profesional de sistemas de tuberías en HDPE y acero. Proyectos completos de piping industrial.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -205,9 +280,9 @@ export default function Home() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">Obras Civiles</CardTitle>
+                  <CardTitle className="text-xl">Obras Civiles e Infraestructura</CardTitle>
                   <CardDescription className="text-sm">
-                    Construcción y desarrollo de proyectos de infraestructura civil
+                    Construcción y desarrollo de proyectos de infraestructura civil. Maquinaria pesada para obras de gran envergadura en construcción y minería.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -223,9 +298,9 @@ export default function Home() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">Arriendo de Maquinaria</CardTitle>
+                  <CardTitle className="text-xl">Arriendo de Maquinaria Pesada</CardTitle>
                   <CardDescription className="text-sm">
-                    Amplia flota de maquinaria pesada disponible para arriendo
+                    Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras 20 ton, grúas horquilla, rodillos, minicargadores. Con operadores calificados.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -241,9 +316,9 @@ export default function Home() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl">Transporte</CardTitle>
+                  <CardTitle className="text-xl">Transporte Industrial</CardTitle>
                   <CardDescription className="text-sm">
-                    Servicios de transporte especializado para tus necesidades
+                    Servicios de transporte especializado para construcción, minería e industria. Logística completa para tus proyectos.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -256,10 +331,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold px-4">
-              ¿Listo para comenzar tu proyecto?
+              Arriendo de Maquinaria Pesada en Chile - Cotiza Ahora
             </h2>
             <p className="text-base sm:text-xl text-gray-300 px-4">
-              Contáctanos y obtén una cotización personalizada
+              Contáctanos por WhatsApp o email y obtén una cotización personalizada para arriendo de maquinaria pesada. Servicio disponible en Quillota y toda la región de Valparaíso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
