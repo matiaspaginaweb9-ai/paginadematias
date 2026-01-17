@@ -259,7 +259,7 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
+                  src="/images/camion aspirador.png" 
                   alt="Camión aspirador - Total Service SPA" 
                   fill
                   className="object-contain"
@@ -294,7 +294,7 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
+                  src="/images/retroescavadora.jpg" 
                   alt="Retro excavadoras - Total Service SPA" 
                   fill
                   className="object-contain"
@@ -374,8 +374,8 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla</h2>
-                <p className="text-gray-600 text-sm mb-2">Diesel 3 Ton</p>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla Diesel</h2>
+                <p className="text-gray-600 text-sm mb-2">3 Ton</p>
                 <div className="space-y-2 text-gray-700 text-sm">
                   <p>Arriendo de grúa horquilla diesel para manejo de carga en almacenes y construcción.</p>
                   <p>Incluye traslado en valor mensual.</p>
@@ -409,8 +409,8 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla</h2>
-                <p className="text-gray-600 text-sm mb-2">Gas-Bencina 2.5 Ton</p>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla Gas-Bencina</h2>
+                <p className="text-gray-600 text-sm mb-2">2.5 Ton</p>
                 <div className="space-y-2 text-gray-700 text-sm">
                   <p>Arriendo de grúa horquilla gas-bencina para manejo de carga en almacenes y construcción.</p>
                   <p>Sin operador sin combustible. Incluye traslado en valor mensual.</p>
