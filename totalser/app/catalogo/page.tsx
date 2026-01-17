@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Mail } from "lucide-react";
 import type { Metadata } from "next";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Catálogo de Maquinaria Pesada",
@@ -40,7 +41,7 @@ const WhatsAppIcon = () => (
 );
 
 const ContactBar = () => (
-  <div className="bg-gray-800 text-white py-2.5 px-4">
+  <div className="bg-gray-800 text-white py-2.5 px-4 rounded-lg">
     <div className="flex items-center justify-between flex-wrap gap-4">
       <div className="flex items-center gap-2">
         <WhatsAppIcon />
@@ -66,7 +67,7 @@ export default function Catalogo() {
         "position": 1,
         "item": {
           "@type": "Product",
-          "name": "Camión Aspirador",
+          "name": "Camión Aspirador 8.000 KG",
           "description": "Arriendo de camión aspirador para traslado de residuos",
         },
       },
@@ -75,7 +76,7 @@ export default function Catalogo() {
         "position": 2,
         "item": {
           "@type": "Product",
-          "name": "Retro Excavadoras",
+          "name": "Retro Excavadora",
           "description": "Arriendo de retro excavadoras con operador y combustible incluido",
         },
       },
@@ -84,7 +85,7 @@ export default function Catalogo() {
         "position": 3,
         "item": {
           "@type": "Product",
-          "name": "Excavadoras",
+          "name": "Excavadora 20 Ton",
           "description": "Arriendo de excavadoras con operador, combustible y traslado incluido",
         },
       },
@@ -93,13 +94,40 @@ export default function Catalogo() {
         "position": 4,
         "item": {
           "@type": "Product",
-          "name": "Grúas Horquillas",
-          "description": "Arriendo de grúas horquillas con traslado incluido",
+          "name": "Grúa Horquilla Diesel 3 Ton",
+          "description": "Arriendo de grúa horquilla diesel con traslado incluido",
         },
       },
       {
         "@type": "ListItem",
         "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Grúa Horquilla Gas-Bencina 2.5 Ton",
+          "description": "Arriendo de grúa horquilla gas-bencina con traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "name": "Rodillo Tripulado BOMAG 120",
+          "description": "Arriendo de rodillo tripulado para compactación",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Product",
+          "name": "Minicargador BOBCAT",
+          "description": "Arriendo de minicargador con operador, combustible y traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
         "item": {
           "@type": "Product",
           "name": "Dragado de Plantas de Tratamiento",
@@ -108,29 +136,11 @@ export default function Catalogo() {
       },
       {
         "@type": "ListItem",
-        "position": 6,
+        "position": 9,
         "item": {
           "@type": "Product",
           "name": "Mantención de Plantas de Tratamiento",
           "description": "Mantenimiento preventivo y correctivo de plantas de tratamiento",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "item": {
-          "@type": "Product",
-          "name": "Rodillo Tripulado",
-          "description": "Arriendo de rodillo tripulado para compactación",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "item": {
-          "@type": "Product",
-          "name": "Minicargador",
-          "description": "Arriendo de minicargador con operador, combustible y traslado incluido",
         },
       },
     ],
@@ -165,186 +175,323 @@ export default function Catalogo() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <div className="min-h-screen bg-stone-200" style={{backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='%23f5f5f5'/%3E%3Cpath d='M0 0h60v60H0z' fill='%23e5e5e5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3C/svg%3E")`}}>
-      <div className="bg-gray-800 text-white py-2.5 px-4">
+      <div className="min-h-screen bg-gradient-to-b from-stone-100 to-stone-200">
+      <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 px-4 shadow-lg">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-base font-semibold">Catálogo de Arriendo de Maquinaria Pesada - Total Service SPA</h1>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-3 space-y-3">
+      <div className="max-w-6xl mx-auto px-4 py-6 space-y-6">
         <ContactBar />
 
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <video 
-                src="/images/WhatsApp Video 2026-01-15 at 15.09.39.mp4" 
-                controls
-                className="w-full h-full object-contain"
-              >
-                Tu navegador no soporta el elemento video.
-              </video>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden">
+                <video 
+                  src="/images/WhatsApp Video 2026-01-15 at 15.09.39.mp4" 
+                  controls
+                  className="w-full h-full object-contain"
+                >
+                  Tu navegador no soporta el elemento video.
+                </video>
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Dragado de Plantas de Tratamiento de Aguas</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas. Soluciones completas para mantenimiento de plantas industriales.</p>
-              <p>Equipos especializados para trabajos en plantas de tratamiento. Maquinaria pesada adaptada para operaciones de dragado profesional.</p>
-              <p>Personal capacitado en operaciones de dragado. Operadores con experiencia certificada en plantas de tratamiento.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="/images/WhatsApp Image 2026-01-15 at 15.19.43.jpeg" 
-                alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
-            </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Mantención de Plantas de Tratamiento de Aguas</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Mantenimiento preventivo y correctivo de plantas de tratamiento de aguas. Servicios especializados para industrias y municipios.</p>
-              <p>Servicios de limpieza y desinfección profesional. Equipos especializados y productos certificados.</p>
-              <p>Inspección y diagnóstico completo de equipos. Evaluación técnica detallada de sistemas de tratamiento.</p>
-              <p>Reparación y reemplazo de componentes. Repuestos originales y técnicos especializados.</p>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Dragado de Plantas de Tratamiento de Aguas</h2>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas. Soluciones completas para mantenimiento de plantas industriales.</p>
+                  <p>Equipos especializados para trabajos en plantas de tratamiento. Maquinaria pesada adaptada para operaciones de dragado profesional.</p>
+                  <p>Personal capacitado en operaciones de dragado. Operadores con experiencia certificada en plantas de tratamiento.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20dragado%20de%20plantas%20de%20tratamiento%20de%20aguas.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-                alt="Camión aspirador - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="/images/WhatsApp Image 2026-01-15 at 15.19.43.jpeg" 
+                  alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Camión Aspirador</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de camión aspirador para traslado de residuos industriales. Servicio certificado con resolución sanitaria vigente.</p>
-              <p>Equipos modernos disponibles para industrias, plantas de tratamiento y proyectos de construcción.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-                alt="Retro excavadoras - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
-            </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Retro Excavadoras</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de retro excavadoras incluye operador calificado y combustible. Equipos modernos en excelente estado para construcción y minería.</p>
-              <p>Incluye traslado en valor mensual. Servicio disponible en Quillota, Valparaíso y toda la región. Cotización personalizada según tus necesidades.</p>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Mantención de Plantas de Tratamiento de Aguas</h2>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Mantenimiento preventivo y correctivo de plantas de tratamiento de aguas. Servicios especializados para industrias y municipios.</p>
+                  <p>Servicios de limpieza y desinfección profesional. Equipos especializados y productos certificados.</p>
+                  <p>Inspección y diagnóstico completo de equipos. Evaluación técnica detallada de sistemas de tratamiento.</p>
+                  <p>Reparación y reemplazo de componentes. Repuestos originales y técnicos especializados.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20mantenci%C3%B3n%20de%20plantas%20de%20tratamiento%20de%20aguas.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
-                alt="Excavadoras - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
+                  alt="Camión aspirador - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Excavadoras</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de excavadoras incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                alt="Grúas horquillas - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
-            </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Grúas Horquillas</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de grúas horquillas para manejo de carga en almacenes y construcción. Incluye traslado en valor mensual. Equipos modernos y certificados.</p>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Camión Aspirador</h2>
+                <p className="text-gray-600 text-sm mb-2">Capacidad 8.000 KG</p>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de camión aspirador para traslado de residuos industriales. Servicio certificado con resolución sanitaria vigente.</p>
+                  <p>Equipos modernos disponibles para industrias, plantas de tratamiento y proyectos de construcción.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20del%20cami%C3%B3n%20aspirador%208.000%20KG.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                alt="Rodillo tripulado - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
+                  alt="Retro excavadoras - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Rodillo Tripulado</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de rodillo tripulado para compactación de suelos en obras civiles. Incluye traslado en valor mensual.</p>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Retro Excavadoras</h2>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de retro excavadoras incluye operador calificado y combustible. Equipos modernos en excelente estado para construcción y minería.</p>
+                  <p>Incluye traslado en valor mensual. Servicio disponible en Quillota, Valparaíso y toda la región. Cotización personalizada según tus necesidades.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20retro%20excavadora.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                alt="Minicargador - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
+                  alt="Excavadora - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Excavadora</h2>
+                <p className="text-gray-600 text-sm mb-2">20 Ton</p>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de excavadora incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20excavadora%2020%20ton.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Minicargador</h2>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de minicargador incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
+                  alt="Grúa horquilla Diesel - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla</h2>
+                <p className="text-gray-600 text-sm mb-2">Diesel 3 Ton</p>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de grúa horquilla diesel para manejo de carga en almacenes y construcción.</p>
+                  <p>Incluye traslado en valor mensual.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20gr%C3%BAa%20horquilla%20diesel%203%20ton.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
+                  alt="Grúa horquilla Gas-Bencina - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla</h2>
+                <p className="text-gray-600 text-sm mb-2">Gas-Bencina 2.5 Ton</p>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de grúa horquilla gas-bencina para manejo de carga en almacenes y construcción.</p>
+                  <p>Sin operador sin combustible. Incluye traslado en valor mensual.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20gr%C3%BAa%20horquilla%20gas-bencina%202.5%20ton.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
+                  alt="Rodillo tripulado - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Rodillo Tripulado</h2>
+                <p className="text-gray-600 text-sm mb-2">BOMAG 120</p>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de rodillo tripulado para compactación de suelos en obras civiles.</p>
+                  <p>Incluye traslado en valor mensual. Sin operador sin combustible.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20del%20rodillo%20tripulado%20BOMAG%20120.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row gap-4 p-4">
+            <div className="w-full md:w-2/5">
+              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
+                <Image 
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
+                  alt="Minicargador - Total Service SPA" 
+                  fill
+                  className="object-contain"
+                  unoptimized
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-3/5 flex flex-col justify-between">
+              <div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Minicargador</h2>
+                <p className="text-gray-600 text-sm mb-2">BOBCAT</p>
+                <div className="space-y-2 text-gray-700 text-sm">
+                  <p>Arriendo de minicargador incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20del%20minicargador%20BOBCAT.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                    Consultar
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
