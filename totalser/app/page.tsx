@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Inicio - Arriendo de Maquinaria Pesada en Chile",
   description: "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte. Equipos modernos con operadores calificados. Contacto: +56 9 6158 2373",
-  keywords: ["arriendo maquinaria pesada Chile", "servicios industriales", "retroexcavadoras arriendo", "excavadoras 20 ton", "mantención plantas tratamiento", "traslado residuos resolución sanitaria", "piping HDPE aceros", "obras civiles", "transporte industrial"],
+  keywords: ["arriendo maquinaria pesada Chile", "servicios industriales", "retroexcavadoras arriendo", "excavadoras", "mantención plantas tratamiento", "traslado residuos resolución sanitaria", "piping HDPE aceros", "obras civiles", "transporte industrial"],
   alternates: {
     canonical: "https://totalservicespa.cl/",
   },
@@ -95,10 +95,10 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        "name": "¿Ofrecen arriendo de excavadora 20 ton con operador?",
+        "name": "¿Ofrecen arriendo de excavadora con operador?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, Total Service SPA ofrece arriendo de excavadora 20 ton con operador calificado, combustible y servicio de traslado incluido en el valor mensual. Nuestros operadores tienen años de experiencia en construcción y minería."
+          "text": "Sí, Total Service SPA ofrece arriendo de excavadora con operador calificado, combustible y servicio de traslado incluido en el valor mensual. Nuestros operadores tienen años de experiencia en construcción y minería."
         }
       },
       {
@@ -106,7 +106,7 @@ export default function Home() {
         "name": "¿Tienen grúas horquilla disponibles para arriendo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, ofrecemos grúas horquilla diesel 3 ton y gas-bencina 2.5 ton para arriendo. Todas incluyen traslado en el valor mensual. Consulta disponibilidad por WhatsApp al +56 9 6158 2373."
+          "text": "Sí, ofrecemos grúas horquilla para arriendo. Todas incluyen traslado en el valor mensual. Consulta disponibilidad por WhatsApp al +56 9 6158 2373."
         }
       },
       {
@@ -114,7 +114,7 @@ export default function Home() {
         "name": "¿Ofrecen servicio de traslado de residuos con resolución sanitaria?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, Total Service SPA ofrece traslado de residuos con resolución sanitaria vigente. Contamos con camión aspirador de 8,000 kg de capacidad. Certificaciones y autorizaciones al día para servicio en toda la región de Valparaíso."
+          "text": "Sí, Total Service SPA ofrece traslado de residuos con resolución sanitaria vigente. Contamos con camión aspirador. Certificaciones y autorizaciones al día para servicio en toda la región de Valparaíso."
         }
       },
       {
@@ -122,7 +122,7 @@ export default function Home() {
         "name": "¿Dónde están ubicados? ¿Atienden en Quillota?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Estamos ubicados en O'Higgins 480, Oficina 5, Quillota, Región de Valparaíso. Atendemos proyectos en Quillota y toda la región, además de proyectos a nivel nacional. Contacta con nosotros al +56 9 6158 2373."
+          "text": "Estamos ubicados en O'Higgins 480, Dpto. Oficina 5, Quillota, Región de Valparaíso. Atendemos proyectos en Quillota y toda la región, además de proyectos a nivel nacional. Contacta con nosotros al +56 9 6158 2373."
         }
       },
       {
@@ -176,6 +176,7 @@ export default function Home() {
             fill
             className="object-cover opacity-30"
             priority
+            fetchPriority="high"
             unoptimized
             sizes="100vw"
           />
@@ -222,6 +223,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     unoptimized
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -240,13 +242,14 @@ export default function Home() {
                     fill
                     className="object-cover"
                     unoptimized
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">Traslado de Residuos con Resolución Sanitaria</CardTitle>
                   <CardDescription className="text-sm">
-                    Transporte seguro y certificado de residuos con resolución sanitaria vigente. Camión aspirador 8,000 kg de capacidad. Certificaciones al día.
+                    Transporte seguro y certificado de residuos con resolución sanitaria vigente. Camión aspirador de capacidad. Certificaciones al día.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -258,6 +261,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     unoptimized
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -276,6 +280,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     unoptimized
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -294,13 +299,14 @@ export default function Home() {
                     fill
                     className="object-cover"
                     unoptimized
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <CardHeader>
                   <CardTitle className="text-xl">Arriendo de Maquinaria Pesada</CardTitle>
                   <CardDescription className="text-sm">
-                    Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras 20 ton, grúas horquilla, rodillos, minicargadores. Con operadores calificados.
+                    Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, rodillos, minicargadores. Con operadores calificados.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -312,6 +318,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     unoptimized
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>

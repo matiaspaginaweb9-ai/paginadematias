@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Catálogo de Maquinaria Pesada",
-  description: "Catálogo completo de maquinaria pesada disponible: retroexcavadoras, excavadoras 20 ton, grúas horquilla diesel y gas, camiones aspiradores 8,000 kg, rodillos tripulados Bomag 120, minicargadores Bobcat. Dragado y mantención de plantas de tratamiento. Contacto: +56 9 6158 2373",
+  description: "Catálogo completo de maquinaria pesada disponible: camión aspirador, retro excavadoras, excavadoras, grúas horquillas. Contacto: +56 9 6158 2373",
   keywords: ["catálogo maquinaria pesada", "arriendo retroexcavadora", "arriendo excavadora 20 ton", "grúa horquilla diesel", "camión aspirador", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
   alternates: {
     canonical: "https://totalservicespa.cl/catalogo",
@@ -66,13 +66,49 @@ export default function Catalogo() {
         "position": 1,
         "item": {
           "@type": "Product",
-          "name": "Dragado de Plantas de Tratamiento de Aguas",
-          "description": "Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas",
+          "name": "Camión Aspirador",
+          "description": "Arriendo de camión aspirador para traslado de residuos",
         },
       },
       {
         "@type": "ListItem",
         "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Retro Excavadoras",
+          "description": "Arriendo de retro excavadoras con operador y combustible incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Excavadoras",
+          "description": "Arriendo de excavadoras con operador, combustible y traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Grúas Horquillas",
+          "description": "Arriendo de grúas horquillas con traslado incluido",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Dragado de Plantas de Tratamiento",
+          "description": "Servicio especializado en dragado y limpieza de plantas de tratamiento",
+        },
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
         "item": {
           "@type": "Product",
           "name": "Mantención de Plantas de Tratamiento",
@@ -81,47 +117,11 @@ export default function Catalogo() {
       },
       {
         "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "Product",
-          "name": "Camión Aspirador",
-          "description": "Camión aspirador con capacidad de 8,000 kg para lodos y otros residuos",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "Product",
-          "name": "Retroexcavadora",
-          "description": "Arriendo de retroexcavadora con operador y combustible incluido",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "Product",
-          "name": "Excavadora 20 Ton",
-          "description": "Arriendo de excavadora 20 ton con operador, combustible y traslado incluido",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "item": {
-          "@type": "Product",
-          "name": "Grúa Horquilla Diesel 3 Ton",
-          "description": "Arriendo de grúa horquilla diesel 3 ton con traslado incluido",
-        },
-      },
-      {
-        "@type": "ListItem",
         "position": 7,
         "item": {
           "@type": "Product",
-          "name": "Grúa Horquilla Gas 2.5 Ton",
-          "description": "Arriendo de grúa horquilla gas-bencina 2.5 ton sin operador ni combustible",
+          "name": "Rodillo Tripulado",
+          "description": "Arriendo de rodillo tripulado para compactación",
         },
       },
       {
@@ -129,17 +129,8 @@ export default function Catalogo() {
         "position": 8,
         "item": {
           "@type": "Product",
-          "name": "Rodillo Tripulado Bomag 120",
-          "description": "Arriendo de rodillo tripulado Bomag 120 con traslado incluido",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 9,
-        "item": {
-          "@type": "Product",
-          "name": "Minicargador Bobcat",
-          "description": "Arriendo de minicargador Bobcat con operador, combustible y traslado incluido",
+          "name": "Minicargador",
+          "description": "Arriendo de minicargador con operador, combustible y traslado incluido",
         },
       },
     ],
@@ -235,7 +226,7 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-                alt="Camión aspirador 8,000 kg capacidad - Total Service SPA" 
+                alt="Camión aspirador - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
@@ -244,13 +235,10 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Camión Aspirador para Traslado de Residuos</h2>
-            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">Capacidad 8.000 kg - Resolución Sanitaria Vigente</p>
-            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Camión Aspirador</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Traslado de lodos, residuos industriales y otros materiales. Servicio certificado con resolución sanitaria vigente.</p>
-              <p>Arriendo mínimo 6 horas. Servicio disponible para industrias, plantas de tratamiento y proyectos de construcción.</p>
+              <p>Arriendo de camión aspirador para traslado de residuos industriales. Servicio certificado con resolución sanitaria vigente.</p>
+              <p>Equipos modernos disponibles para industrias, plantas de tratamiento y proyectos de construcción.</p>
             </div>
           </div>
         </div>
@@ -260,7 +248,7 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-                alt="Retroexcavadora con operador y combustible incluido - Total Service SPA" 
+                alt="Retro excavadoras - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
@@ -269,9 +257,9 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Retroexcavadora con Operador</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Retro Excavadoras</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de retroexcavadora incluye operador calificado y combustible. Equipos modernos en excelente estado para construcción y minería.</p>
+              <p>Arriendo de retro excavadoras incluye operador calificado y combustible. Equipos modernos en excelente estado para construcción y minería.</p>
               <p>Incluye traslado en valor mensual. Servicio disponible en Quillota, Valparaíso y toda la región. Cotización personalizada según tus necesidades.</p>
             </div>
           </div>
@@ -282,7 +270,7 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
-                alt="Excavadora 20 ton con operador y combustible - Total Service SPA" 
+                alt="Excavadoras - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
@@ -291,12 +279,9 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Excavadora 20 Ton</h2>
-            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">20 Toneladas - Con Operador Calificado</p>
-            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Excavadoras</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de excavadora 20 ton incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
+              <p>Arriendo de excavadoras incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
             </div>
           </div>
         </div>
@@ -306,7 +291,7 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                alt="Grúa horquilla diesel 3 ton - Total Service SPA" 
+                alt="Grúas horquillas - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
@@ -315,37 +300,9 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Grúa Horquilla Diesel</h2>
-            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">3 Toneladas - Diesel</p>
-            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Grúas Horquillas</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de grúa horquilla diesel 3 ton para manejo de carga en almacenes y construcción. Incluye traslado en valor mensual. Equipos modernos y certificados.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-3 items-center">
-          <div className="w-full md:w-2/5">
-            <div className="relative w-full h-40 sm:h-48 md:h-52">
-              <Image 
-                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80" 
-                alt="Grúa horquilla gas-bencina 2.5 ton - Total Service SPA" 
-                fill
-                className="object-contain"
-                unoptimized
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
-            </div>
-          </div>
-          <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Grúa Horquilla Gas-Bencina</h2>
-            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">2.5 Toneladas - Gas o Bencina</p>
-            </div>
-            <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de grúa horquilla gas-bencina 2.5 ton sin operador ni combustible incluido. Ideal para empresas que cuentan con operadores propios.</p>
-              <p>Incluye traslado en valor mensual. Equipo moderno disponible para arriendo en Quillota y región de Valparaíso.</p>
+              <p>Arriendo de grúas horquillas para manejo de carga en almacenes y construcción. Incluye traslado en valor mensual. Equipos modernos y certificados.</p>
             </div>
           </div>
         </div>
@@ -355,7 +312,7 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                alt="Rodillo tripulado Bomag 120 - Total Service SPA" 
+                alt="Rodillo tripulado - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
@@ -364,13 +321,9 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Rodillo Tripulado Bomag 120</h2>
-            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">Bomag 120 - Compactación Profesional</p>
-            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Rodillo Tripulado</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de rodillo tripulado Bomag 120 para compactación de suelos en obras civiles. Incluye traslado en valor mensual.</p>
-              <p>Sin operador ni combustible incluido. Equipo moderno y certificado para proyectos de construcción e infraestructura.</p>
+              <p>Arriendo de rodillo tripulado para compactación de suelos en obras civiles. Incluye traslado en valor mensual.</p>
             </div>
           </div>
         </div>
@@ -380,7 +333,7 @@ export default function Catalogo() {
             <div className="relative w-full h-40 sm:h-48 md:h-52">
               <Image 
                 src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                alt="Minicargador Bobcat con operador - Total Service SPA" 
+                alt="Minicargador - Total Service SPA" 
                 fill
                 className="object-contain"
                 unoptimized
@@ -389,12 +342,9 @@ export default function Catalogo() {
             </div>
           </div>
           <div className="w-full md:w-3/5">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Arriendo de Minicargador Bobcat</h2>
-            <div className="bg-[#FF6B35] px-3 py-1.5 mb-2 inline-block">
-              <p className="text-white font-bold text-sm">Bobcat - Versátil y Compacto</p>
-            </div>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Minicargador</h2>
             <div className="space-y-1 text-gray-800 text-sm">
-              <p>Arriendo de minicargador Bobcat incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
+              <p>Arriendo de minicargador incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
             </div>
           </div>
         </div>
