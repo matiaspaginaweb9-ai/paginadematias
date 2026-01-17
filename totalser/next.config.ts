@@ -15,7 +15,6 @@ const nextConfig: NextConfig = {
       exclude: ['error', 'warn'],
     } : false,
   },
-  swcMinify: true,
 };
 
 export default nextConfig;
