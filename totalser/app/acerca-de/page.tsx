@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.totalservicesspa.cl"),
-  title: "Acerca de - Nuestra Empresa y Servicios",
-  description: "Conoce Total Service SPA: empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Desde 2017 en Quillota, Región de Valparaíso. Contacto: +56 9 6158 2373",
+  title: "Sobre Nosotros | Total Service SPA - Maquinaria Pesada Chile",
+  description: "Total Service SPA: Empresa líder en arriendo de maquinaria pesada desde 2017. Ubicados en Quillota, Región de Valparaíso. Especialistas en construcción, minería e infraestructura. Equipos modernos con operadores calificados. +56 9 6158 2373",
   keywords: ["Total Service SPA empresa", "maquinaria pesada Quillota", "arriendo maquinaria experiencia", "equipos modernos construcción", "operadores calificados", "servicios industriales Chile"],
   alternates: {
     canonical: "https://www.totalservicesspa.cl/acerca-de",

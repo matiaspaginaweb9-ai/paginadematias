@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.totalservicesspa.cl"),
-  title: "Catálogo de Maquinaria Pesada",
-  description: "Catálogo completo de maquinaria pesada disponible: camión aspirador, retro excavadoras, excavadoras, grúas horquillas. Contacto: +56 9 6158 2373",
+  title: "Catálogo Maquinaria Pesada | Arriendo Retroexcavadoras y Excavadoras",
+  description: "Catálogo completo de maquinaria pesada para arriendo en Chile. Camión aspirador 8,000 kg, retroexcavadoras, excavadoras 20 ton, grúas horquilla diesel y gas. Precios y disponibilidad. Contacto: +56 9 6158 2373",
   keywords: ["catálogo maquinaria pesada", "arriendo retroexcavadora", "arriendo excavadora 20 ton", "grúa horquilla diesel", "camión aspirador", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
   alternates: {
     canonical: "https://www.totalservicesspa.cl/catalogo",
@@ -331,8 +331,8 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
-                  alt="Excavadora - Total Service SPA" 
+                  src="/images/excavadora.png" 
+                  alt="Excavadora 20 Ton - Total Service SPA" 
                   fill
                   className="object-contain"
                   unoptimized

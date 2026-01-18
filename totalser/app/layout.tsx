@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Total Service SPA - Arriendo de Maquinaria Pesada | Construcción y Minería",
+    default: "Arriendo Maquinaria Pesada Chile | Total Service SPA",
     template: "%s | Total Service SPA",
   },
-  description: "Total Service SPA: Líderes en arriendo de maquinaria pesada en Chile. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores 8,000 kg, rodillos, minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, piping HDPE, obras civiles. Ubicados en Quillota. Contacto: +56 9 6158 2373",
+  description: "Arriendo de maquinaria pesada en Chile con operador. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores. Servicios industriales, mantención plantas tratamiento, traslado residuos, piping HDPE. Quillota, Valparaíso. +56 9 6158 2373",
   keywords: ["arriendo maquinaria pesada", "arriendo maquinaria pesada Chile", "retroexcavadoras Chile", "retroexcavadoras arriendo", "excavadoras arriendo", "excavadora 20 ton", "grúas horquilla", "grúa horquilla diesel", "grúa horquilla gas", "maquinaria construcción", "maquinaria minería", "plantas tratamiento aguas", "mantención plantas tratamiento", "traslado residuos", "traslado residuos resolución sanitaria", "camión aspirador", "piping HDPE", "piping aceros", "obras civiles", "transporte industrial", "Total Service SPA", "arriendo equipos construcción", "maquinaria pesada Quillota", "maquinaria pesada Valparaíso", "servicios industriales Chile", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
   authors: [{ name: "Total Service SPA", url: "https://www.totalservicesspa.cl" }],
   creator: "Total Service SPA",
@@ -133,6 +133,27 @@ export default function RootLayout({
       "@type": "QuantitativeValue",
       "value": "10-50",
     },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "O'Higgins 480, Dpto. Oficina 5",
+      "addressLocality": "Quillota",
+      "addressRegion": "Valparaíso",
+      "addressCountry": "CL",
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Chile",
+      },
+      {
+        "@type": "State",
+        "name": "Valparaíso",
+      },
+      {
+        "@type": "City",
+        "name": "Quillota",
+      },
+    ],
   };
 
   const localBusinessSchema = {
@@ -169,10 +190,20 @@ export default function RootLayout({
     ],
     "priceRange": "$$",
     "description": "Total Service SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte y arriendo de maquinaria pesada.",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Chile",
-    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Chile",
+      },
+      {
+        "@type": "State",
+        "name": "Valparaíso",
+      },
+      {
+        "@type": "City",
+        "name": "Quillota",
+      },
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Servicios de Maquinaria Pesada",

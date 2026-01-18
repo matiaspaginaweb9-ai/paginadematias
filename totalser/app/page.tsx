@@ -7,8 +7,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.totalservicesspa.cl"),
-  title: "Inicio - Arriendo de Maquinaria Pesada en Chile",
-  description: "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte. Equipos modernos con operadores calificados. Contacto: +56 9 6158 2373",
+  title: "Arriendo Maquinaria Pesada Chile | Retroexcavadoras y Excavadoras",
+  description: "Arriendo de maquinaria pesada en Chile con operador incluido. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores 8,000 kg. Servicios en Quillota, Valparaíso y todo Chile. Cotiza ahora: +56 9 6158 2373",
   keywords: ["arriendo maquinaria pesada Chile", "servicios industriales", "retroexcavadoras arriendo", "excavadoras", "mantención plantas tratamiento", "traslado residuos resolución sanitaria", "piping HDPE aceros", "obras civiles", "transporte industrial"],
   alternates: {
     canonical: "https://www.totalservicesspa.cl/",
@@ -66,8 +66,8 @@ export default function Home() {
     "@type": "WebSite",
     "@id": "https://www.totalservicesspa.cl/#website",
     "url": "https://www.totalservicesspa.cl",
-    "name": "Total Service SPA - Arriendo de Maquinaria Pesada",
-    "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores en Chile",
+    "name": "Total Service SPA - Arriendo de Maquinaria Pesada en Chile",
+    "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores. Operadores calificados, servicio en Quillota, Valparaíso y todo Chile",
     "publisher": {
       "@id": "https://www.totalservicesspa.cl/#organization",
     },
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-4">
               <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
-                Servicios Industriales
+                Arriendo de Maquinaria Pesada en Chile
               </span>
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
