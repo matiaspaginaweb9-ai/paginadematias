@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     canonical: "https://www.totalservicesspa.cl/catalogo",
   },
   openGraph: {
-    title: "Catálogo de Maquinaria Pesada - Total Service SPA",
+    title: "Catálogo de Maquinaria Pesada - Total Services SPA",
     description: "Catálogo completo de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores y más equipos",
     url: "https://www.totalservicesspa.cl/catalogo",
-    siteName: "Total Service SPA",
+    siteName: "Total Services SPA",
     locale: "es_CL",
     type: "website",
     images: [
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
-        alt: "Catálogo de Maquinaria Pesada Total Service SPA",
+        alt: "Catálogo de Maquinaria Pesada Total Services SPA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Catálogo de Maquinaria Pesada - Total Service SPA",
+    title: "Catálogo de Maquinaria Pesada - Total Services SPA",
     description: "Catálogo completo de maquinaria pesada disponible para arriendo",
     images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
@@ -61,7 +61,7 @@ export default function Catalogo() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": "https://www.totalservicesspa.cl/catalogo#itemlist",
-    "name": "Catálogo de Maquinaria Pesada - Total Service SPA",
+    "name": "Catálogo de Maquinaria Pesada - Total Services SPA",
     "description": "Catálogo completo de maquinaria pesada disponible para arriendo",
     "url": "https://www.totalservicesspa.cl/catalogo",
     "itemListElement": [
@@ -181,7 +181,7 @@ export default function Catalogo() {
       <div className="min-h-screen bg-gradient-to-b from-stone-100 to-stone-200">
       <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 px-4 shadow-lg">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-base font-semibold">Catálogo de Arriendo de Maquinaria Pesada - Total Service SPA</h1>
+          <h1 className="text-base font-semibold">Catálogo de Arriendo de Maquinaria Pesada - Total Services SPA</h1>
         </div>
       </div>
 
@@ -227,7 +227,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/Mantención de Plantas.png" 
-                  alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
+                  alt="Mantención de plantas de tratamiento de aguas - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -263,7 +263,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/camion aspirador.png" 
-                  alt="Camión aspirador - Total Service SPA" 
+                  alt="Camión aspirador - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -298,7 +298,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/retroescavadora.jpg" 
-                  alt="Retro excavadoras - Total Service SPA" 
+                  alt="Retro excavadoras - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -332,7 +332,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/excavadora.png" 
-                  alt="Excavadora 20 Ton - Total Service SPA" 
+                  alt="Excavadora 20 Ton - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -366,7 +366,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                  alt="Grúa horquilla Diesel - Total Service SPA" 
+                  alt="Grúa horquilla Diesel - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -401,7 +401,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                  alt="Grúa horquilla Gas-Bencina - Total Service SPA" 
+                  alt="Grúa horquilla Gas-Bencina - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -436,7 +436,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                  alt="Rodillo tripulado - Total Service SPA" 
+                  alt="Rodillo tripulado - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -471,7 +471,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                  alt="Minicargador - Total Service SPA" 
+                  alt="Minicargador - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized

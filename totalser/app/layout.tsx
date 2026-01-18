@@ -17,15 +17,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Arriendo Maquinaria Pesada Chile | Total Service SPA",
-    template: "%s | Total Service SPA",
+    default: "Arriendo Maquinaria Pesada Chile | Total Services SPA",
+    template: "%s | Total Services SPA",
   },
   description: "Arriendo de maquinaria pesada en Chile con operador. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores. Servicios industriales, mantención plantas tratamiento, traslado residuos, piping HDPE. Quillota, Valparaíso. +56 9 6158 2373",
-  keywords: ["arriendo maquinaria pesada", "arriendo maquinaria pesada Chile", "retroexcavadoras Chile", "retroexcavadoras arriendo", "excavadoras arriendo", "excavadora 20 ton", "grúas horquilla", "grúa horquilla diesel", "grúa horquilla gas", "maquinaria construcción", "maquinaria minería", "plantas tratamiento aguas", "mantención plantas tratamiento", "traslado residuos", "traslado residuos resolución sanitaria", "camión aspirador", "piping HDPE", "piping aceros", "obras civiles", "transporte industrial", "Total Service SPA", "arriendo equipos construcción", "maquinaria pesada Quillota", "maquinaria pesada Valparaíso", "servicios industriales Chile", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
-  authors: [{ name: "Total Service SPA", url: "https://www.totalservicesspa.cl" }],
-  creator: "Total Service SPA",
-  publisher: "Total Service SPA",
-  applicationName: "Total Service SPA",
+  keywords: ["arriendo maquinaria pesada", "arriendo maquinaria pesada Chile", "retroexcavadoras Chile", "retroexcavadoras arriendo", "excavadoras arriendo", "excavadora 20 ton", "grúas horquilla", "grúa horquilla diesel", "grúa horquilla gas", "maquinaria construcción", "maquinaria minería", "plantas tratamiento aguas", "mantención plantas tratamiento", "traslado residuos", "traslado residuos resolución sanitaria", "camión aspirador", "piping HDPE", "piping aceros", "obras civiles", "transporte industrial", "Total Services SPA", "arriendo equipos construcción", "maquinaria pesada Quillota", "maquinaria pesada Valparaíso", "servicios industriales Chile", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
+  authors: [{ name: "Total Services SPA", url: "https://www.totalservicesspa.cl" }],
+  creator: "Total Services SPA",
+  publisher: "Total Services SPA",
+  applicationName: "Total Services SPA",
   category: "Maquinaria Pesada",
   classification: "Servicios Industriales",
   formatDetection: {
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Total Service SPA - Arriendo de Maquinaria Pesada | Construcción y Minería",
+    title: "Total Services SPA - Arriendo de Maquinaria Pesada | Construcción y Minería",
     description: "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla y más equipos en excelente estado. Operadores calificados, servicio de traslado incluido.",
     url: "https://www.totalservicesspa.cl",
-    siteName: "Total Service SPA",
+    siteName: "Total Services SPA",
     locale: "es_CL",
     type: "website",
     images: [
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
         url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
-        alt: "Total Service SPA - Maquinaria Pesada para Construcción y Minería",
+        alt: "Total Services SPA - Maquinaria Pesada para Construcción y Minería",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Total Service SPA - Arriendo de Maquinaria Pesada",
+    title: "Total Services SPA - Arriendo de Maquinaria Pesada",
     description: "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Equipos modernos con operadores calificados. Contacto: +56 9 6158 2373",
     images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
     creator: "@totalservicespa",
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     "mobile-web-app-capable": "yes",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "apple-mobile-web-app-title": "Total Service SPA",
+    "apple-mobile-web-app-title": "Total Services SPA",
     "theme-color": "#FF6B35",
   },
 };
@@ -108,11 +108,11 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://www.totalservicesspa.cl/#organization",
-    "name": "Total Service SPA",
+    "name": "Total Services SPA",
     "url": "https://www.totalservicesspa.cl",
     "logo": "https://www.totalservicesspa.cl/images/logo%20web.png",
     "image": "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
-    "description": "Total Service SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores, rodillos y minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte. Ubicados en Quillota, Región de Valparaíso.",
+    "description": "Total Services SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores, rodillos y minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte. Ubicados en Quillota, Región de Valparaíso.",
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -162,7 +162,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://www.totalservicesspa.cl/#localbusiness",
-    "name": "Total Service SPA",
+    "name": "Total Services SPA",
     "image": [
       "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
       "https://www.totalservicesspa.cl/images/Mantenci%C3%B3n%20de%20Plantas.png",
@@ -191,7 +191,7 @@ export default function RootLayout({
       },
     ],
     "priceRange": "$$",
-    "description": "Total Service SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte y arriendo de maquinaria pesada.",
+    "description": "Total Services SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte y arriendo de maquinaria pesada.",
     "areaServed": [
       {
         "@type": "Country",
@@ -218,7 +218,7 @@ export default function RootLayout({
             "description": "Arriendo de retroexcavadora con operador y combustible incluido",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Total Service SPA",
+              "name": "Total Services SPA",
             },
           },
         },
@@ -230,7 +230,7 @@ export default function RootLayout({
             "description": "Arriendo de excavadora 20 ton con operador y combustible incluido",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Total Service SPA",
+              "name": "Total Services SPA",
             },
           },
         },
@@ -242,7 +242,7 @@ export default function RootLayout({
             "description": "Arriendo de grúa horquilla diesel 3 ton y gas-bencina 2.5 ton",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Total Service SPA",
+              "name": "Total Services SPA",
             },
           },
         },
@@ -254,7 +254,7 @@ export default function RootLayout({
             "description": "Mantenimiento preventivo y correctivo de plantas de tratamiento de aguas",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Total Service SPA",
+              "name": "Total Services SPA",
             },
           },
         },
@@ -266,7 +266,7 @@ export default function RootLayout({
             "description": "Traslado de residuos con resolución sanitaria. Camión aspirador 8,000 kg capacidad",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Total Service SPA",
+              "name": "Total Services SPA",
             },
           },
         },
@@ -278,7 +278,7 @@ export default function RootLayout({
             "description": "Servicio especializado en dragado y limpieza de plantas de tratamiento de aguas",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Total Service SPA",
+              "name": "Total Services SPA",
             },
           },
         },
@@ -305,7 +305,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#FF6B35" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Total Service SPA" />
+        <meta name="apple-mobile-web-app-title" content="Total Services SPA" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body

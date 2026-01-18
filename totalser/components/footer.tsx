@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 md:gap-10 mb-6 sm:mb-10 md:mb-12">
           <div className="space-y-2.5 sm:space-y-4">
             <h3 className="text-base sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
-              TOTAL SERVICE
+              TOTAL SERVICES
             </h3>
             <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
               Maquinaria pesada de alta calidad para tus proyectos de construcción, minería e infraestructura.
@@ -103,7 +103,7 @@ export function Footer() {
         <div className="border-t border-gray-700/50 pt-4 sm:pt-6 md:pt-10">
           <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2.5 sm:gap-4">
             <p className="text-[10px] sm:text-xs md:text-sm text-gray-400 text-center sm:text-left">
-              © {new Date().getFullYear()} Total Service. Todos los derechos reservados.
+              © {new Date().getFullYear()} Total Services. Todos los derechos reservados.
             </p>
             <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs md:text-sm text-gray-400">
               <span>Desarrollado por</span>

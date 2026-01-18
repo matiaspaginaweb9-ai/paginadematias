@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Total Service SPA - Arriendo de Maquinaria Pesada",
-    short_name: "Total Service",
+    name: "Total Services SPA - Arriendo de Maquinaria Pesada",
+    short_name: "Total Services",
     description: "Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura",
     start_url: "/",
     display: "standalone",

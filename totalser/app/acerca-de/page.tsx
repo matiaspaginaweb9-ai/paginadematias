@@ -6,17 +6,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.totalservicesspa.cl"),
-  title: "Sobre Nosotros | Total Service SPA - Maquinaria Pesada Chile",
-  description: "Total Service SPA: Empresa líder en arriendo de maquinaria pesada desde 2017. Ubicados en Quillota, Región de Valparaíso. Especialistas en construcción, minería e infraestructura. Equipos modernos con operadores calificados. +56 9 6158 2373",
-  keywords: ["Total Service SPA empresa", "maquinaria pesada Quillota", "arriendo maquinaria experiencia", "equipos modernos construcción", "operadores calificados", "servicios industriales Chile"],
+  title: "Sobre Nosotros | Total Services SPA - Maquinaria Pesada Chile",
+  description: "Total Services SPA: Empresa líder en arriendo de maquinaria pesada desde 2017. Ubicados en Quillota, Región de Valparaíso. Especialistas en construcción, minería e infraestructura. Equipos modernos con operadores calificados. +56 9 6158 2373",
+  keywords: ["Total Services SPA empresa", "maquinaria pesada Quillota", "arriendo maquinaria experiencia", "equipos modernos construcción", "operadores calificados", "servicios industriales Chile"],
   alternates: {
     canonical: "https://www.totalservicesspa.cl/acerca-de",
   },
   openGraph: {
-    title: "Acerca de Total Service SPA - Nuestra Empresa",
+    title: "Acerca de Total Services SPA - Nuestra Empresa",
     description: "Líderes en arriendo de maquinaria pesada con años de experiencia en construcción, minería e infraestructura. Equipos modernos y operadores calificados.",
     url: "https://www.totalservicesspa.cl/acerca-de",
-    siteName: "Total Service SPA",
+    siteName: "Total Services SPA",
     locale: "es_CL",
     type: "website",
     images: [
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
         url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
-        alt: "Total Service SPA - Empresa líder en maquinaria pesada",
+        alt: "Total Services SPA - Empresa líder en maquinaria pesada",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Acerca de Total Service SPA",
+    title: "Acerca de Total Services SPA",
     description: "Líderes en arriendo de maquinaria pesada con años de experiencia",
     images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
@@ -42,8 +42,8 @@ export default function AcercaDe() {
     "@type": "AboutPage",
     "@id": "https://www.totalservicesspa.cl/acerca-de#webpage",
     "url": "https://www.totalservicesspa.cl/acerca-de",
-    "name": "Acerca de Total Service SPA",
-    "description": "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia",
+    "name": "Acerca de Total Services SPA",
+    "description": "Conoce Total Services SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia",
     "inLanguage": "es-CL",
     "isPartOf": {
       "@id": "https://www.totalservicesspa.cl/#website",
@@ -91,7 +91,7 @@ export default function AcercaDe() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold px-4">
-              Acerca de <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">Total Service SPA</span>
+              Acerca de <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">Total Services SPA</span>
             </h1>
             <p className="text-base sm:text-xl text-gray-300 px-4">
               Empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Desde 2017 en Quillota, Región de Valparaíso
@@ -121,7 +121,7 @@ export default function AcercaDe() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 px-4">Valores de Total Service SPA</h2>
+            <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 px-4">Valores de Total Services SPA</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="text-center">
                 <CardHeader>

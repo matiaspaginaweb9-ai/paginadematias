@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     canonical: "https://www.totalservicesspa.cl/",
   },
   openGraph: {
-    title: "Total Service SPA - Inicio | Arriendo de Maquinaria Pesada",
+    title: "Total Services SPA - Inicio | Arriendo de Maquinaria Pesada",
     description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más. Equipos modernos con operadores calificados.",
     url: "https://www.totalservicesspa.cl",
-    siteName: "Total Service SPA",
+    siteName: "Total Services SPA",
     locale: "es_CL",
     type: "website",
     images: [
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
         url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
-        alt: "Total Service SPA - Servicios Industriales de Maquinaria Pesada",
+        alt: "Total Services SPA - Servicios Industriales de Maquinaria Pesada",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Total Service SPA - Arriendo de Maquinaria Pesada",
+    title: "Total Services SPA - Arriendo de Maquinaria Pesada",
     description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más",
     images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
@@ -43,8 +43,8 @@ export default function Home() {
     "@type": "WebPage",
     "@id": "https://www.totalservicesspa.cl/#webpage",
     "url": "https://www.totalservicesspa.cl",
-    "name": "Total Service SPA - Arriendo de Maquinaria Pesada",
-    "description": "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte.",
+    "name": "Total Services SPA - Arriendo de Maquinaria Pesada",
+    "description": "Total Services SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte.",
     "inLanguage": "es-CL",
     "isPartOf": {
       "@id": "https://www.totalservicesspa.cl/#website",
@@ -66,7 +66,7 @@ export default function Home() {
     "@type": "WebSite",
     "@id": "https://www.totalservicesspa.cl/#website",
     "url": "https://www.totalservicesspa.cl",
-    "name": "Total Service SPA - Arriendo de Maquinaria Pesada en Chile",
+    "name": "Total Services SPA - Arriendo de Maquinaria Pesada en Chile",
     "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores. Operadores calificados, servicio en Quillota, Valparaíso y todo Chile",
     "publisher": {
       "@id": "https://www.totalservicesspa.cl/#organization",
@@ -99,7 +99,7 @@ export default function Home() {
         "name": "¿Ofrecen arriendo de excavadora con operador?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, Total Service SPA ofrece arriendo de excavadora con operador calificado, combustible y servicio de traslado incluido en el valor mensual. Nuestros operadores tienen años de experiencia en construcción y minería."
+          "text": "Sí, Total Services SPA ofrece arriendo de excavadora con operador calificado, combustible y servicio de traslado incluido en el valor mensual. Nuestros operadores tienen años de experiencia en construcción y minería."
         }
       },
       {
@@ -115,7 +115,7 @@ export default function Home() {
         "name": "¿Ofrecen servicio de traslado de residuos con resolución sanitaria?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, Total Service SPA ofrece traslado de residuos con resolución sanitaria vigente. Contamos con camión aspirador. Certificaciones y autorizaciones al día para servicio en toda la región de Valparaíso."
+          "text": "Sí, Total Services SPA ofrece traslado de residuos con resolución sanitaria vigente. Contamos con camión aspirador. Certificaciones y autorizaciones al día para servicio en toda la región de Valparaíso."
         }
       },
       {
@@ -141,7 +141,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://www.totalservicesspa.cl/#localbusiness",
-    "name": "Total Service SPA",
+    "name": "Total Services SPA",
     "url": "https://www.totalservicesspa.cl",
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -175,7 +175,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <Image 
             src="/images/Mantención de Plantas.png" 
-            alt="Servicios industriales Total Service SPA" 
+            alt="Servicios industriales Total Services SPA" 
             fill
             className="object-cover opacity-30"
             priority
@@ -193,7 +193,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
-              Total Service SPA: Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, rodillos y más equipos modernos con operadores calificados. 
+              Total Services SPA: Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, rodillos y más equipos modernos con operadores calificados. 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
@@ -222,7 +222,7 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/Mantención de Plantas.png" 
-                    alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
+                    alt="Mantención de plantas de tratamiento de aguas - Total Services SPA" 
                     fill
                     className="object-cover"
                     unoptimized
@@ -241,7 +241,7 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.02.19.jpeg" 
-                    alt="Traslado de residuos con resolución sanitaria - Total Service SPA" 
+                    alt="Traslado de residuos con resolución sanitaria - Total Services SPA" 
                     fill
                     className="object-cover"
                     unoptimized
@@ -260,7 +260,7 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.02.56.jpeg" 
-                    alt="Proyectos piping HDPE y aceros - Total Service SPA" 
+                    alt="Proyectos piping HDPE y aceros - Total Services SPA" 
                     fill
                     className="object-cover"
                     unoptimized
@@ -279,7 +279,7 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" 
-                    alt="Obras civiles e infraestructura - Total Service SPA" 
+                    alt="Obras civiles e infraestructura - Total Services SPA" 
                     fill
                     className="object-cover"
                     unoptimized
@@ -317,7 +317,7 @@ export default function Home() {
                 <div className="relative w-full h-48">
                   <Image 
                     src="/images/WhatsApp Image 2026-01-15 at 16.05.57.jpeg" 
-                    alt="Transporte industrial y logística - Total Service SPA" 
+                    alt="Transporte industrial y logística - Total Services SPA" 
                     fill
                     className="object-cover"
                     unoptimized
