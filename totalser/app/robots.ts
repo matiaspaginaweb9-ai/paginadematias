@@ -19,7 +19,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/images-xd/"],
       },
     ],
-    sitemap: "https://totalservicespa.cl/sitemap.xml",
-    host: "https://totalservicespa.cl",
+    sitemap: "https://www.totalservicesspa.cl/sitemap.xml",
+    host: "https://www.totalservicesspa.cl",
   };
 }

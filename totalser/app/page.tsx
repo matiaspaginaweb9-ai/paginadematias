@@ -6,22 +6,23 @@ import { ArrowRight, Truck, Wrench, Shield, Clock, CheckCircle } from "lucide-re
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.totalservicesspa.cl"),
   title: "Inicio - Arriendo de Maquinaria Pesada en Chile",
   description: "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte. Equipos modernos con operadores calificados. Contacto: +56 9 6158 2373",
   keywords: ["arriendo maquinaria pesada Chile", "servicios industriales", "retroexcavadoras arriendo", "excavadoras", "mantención plantas tratamiento", "traslado residuos resolución sanitaria", "piping HDPE aceros", "obras civiles", "transporte industrial"],
   alternates: {
-    canonical: "https://totalservicespa.cl/",
+    canonical: "https://www.totalservicesspa.cl/",
   },
   openGraph: {
     title: "Total Service SPA - Inicio | Arriendo de Maquinaria Pesada",
     description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más. Equipos modernos con operadores calificados.",
-    url: "https://totalservicespa.cl",
+    url: "https://www.totalservicesspa.cl",
     siteName: "Total Service SPA",
     locale: "es_CL",
     type: "website",
     images: [
       {
-        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
         alt: "Total Service SPA - Servicios Industriales de Maquinaria Pesada",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Total Service SPA - Arriendo de Maquinaria Pesada",
     description: "Servicios industriales completos: maquinaria pesada, plantas de tratamiento, traslado de residuos y más",
-    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
+    images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
 };
 
@@ -40,42 +41,42 @@ export default function Home() {
   const webpageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://totalservicespa.cl/#webpage",
-    "url": "https://totalservicespa.cl",
+    "@id": "https://www.totalservicesspa.cl/#webpage",
+    "url": "https://www.totalservicesspa.cl",
     "name": "Total Service SPA - Arriendo de Maquinaria Pesada",
     "description": "Total Service SPA ofrece servicios industriales: arriendo de maquinaria pesada, mantención de plantas de tratamiento, traslado de residuos, proyectos piping HDPE, obras civiles y transporte.",
     "inLanguage": "es-CL",
     "isPartOf": {
-      "@id": "https://totalservicespa.cl/#website",
+      "@id": "https://www.totalservicesspa.cl/#website",
     },
     "about": {
-      "@id": "https://totalservicespa.cl/#organization",
+      "@id": "https://www.totalservicesspa.cl/#organization",
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+      "url": "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
     },
     "breadcrumb": {
-      "@id": "https://totalservicespa.cl/#breadcrumb",
+      "@id": "https://www.totalservicesspa.cl/#breadcrumb",
     },
   };
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://totalservicespa.cl/#website",
-    "url": "https://totalservicespa.cl",
+    "@id": "https://www.totalservicesspa.cl/#website",
+    "url": "https://www.totalservicesspa.cl",
     "name": "Total Service SPA - Arriendo de Maquinaria Pesada",
     "description": "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores en Chile",
     "publisher": {
-      "@id": "https://totalservicespa.cl/#organization",
+      "@id": "https://www.totalservicesspa.cl/#organization",
     },
     "inLanguage": "es-CL",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://totalservicespa.cl/catalogo?q={search_term_string}",
+        "urlTemplate": "https://www.totalservicesspa.cl/catalogo?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -139,7 +140,9 @@ export default function Home() {
   const aggregateRatingSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://totalservicespa.cl/#localbusiness",
+    "@id": "https://www.totalservicesspa.cl/#localbusiness",
+    "name": "Total Service SPA",
+    "url": "https://www.totalservicesspa.cl",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
@@ -171,8 +174,8 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-[600px] flex items-center">
         <div className="absolute inset-0">
           <Image 
-            src="/images/WhatsApp Image 2026-01-15 at 15.19.44.jpeg" 
-            alt="Maquinaria pesada Total Service SPA - Servicios industriales de construcción y minería" 
+            src="/images/Mantención de Plantas.png" 
+            alt="Servicios industriales Total Service SPA" 
             fill
             className="object-cover opacity-30"
             priority
@@ -218,7 +221,7 @@ export default function Home() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative w-full h-48">
                   <Image 
-                    src="/images/WhatsApp Image 2026-01-15 at 16.01.47.jpeg" 
+                    src="/images/Mantención de Plantas.png" 
                     alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
                     fill
                     className="object-cover"

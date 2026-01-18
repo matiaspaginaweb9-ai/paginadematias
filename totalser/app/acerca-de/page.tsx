@@ -5,22 +5,23 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.totalservicesspa.cl"),
   title: "Acerca de - Nuestra Empresa y Servicios",
   description: "Conoce Total Service SPA: empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Desde 2017 en Quillota, Región de Valparaíso. Contacto: +56 9 6158 2373",
   keywords: ["Total Service SPA empresa", "maquinaria pesada Quillota", "arriendo maquinaria experiencia", "equipos modernos construcción", "operadores calificados", "servicios industriales Chile"],
   alternates: {
-    canonical: "https://totalservicespa.cl/acerca-de",
+    canonical: "https://www.totalservicesspa.cl/acerca-de",
   },
   openGraph: {
     title: "Acerca de Total Service SPA - Nuestra Empresa",
     description: "Líderes en arriendo de maquinaria pesada con años de experiencia en construcción, minería e infraestructura. Equipos modernos y operadores calificados.",
-    url: "https://totalservicespa.cl/acerca-de",
+    url: "https://www.totalservicesspa.cl/acerca-de",
     siteName: "Total Service SPA",
     locale: "es_CL",
     type: "website",
     images: [
       {
-        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
         alt: "Total Service SPA - Empresa líder en maquinaria pesada",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Acerca de Total Service SPA",
     description: "Líderes en arriendo de maquinaria pesada con años de experiencia",
-    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
+    images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
 };
 
@@ -39,19 +40,19 @@ export default function AcercaDe() {
   const aboutPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "@id": "https://totalservicespa.cl/acerca-de#webpage",
-    "url": "https://totalservicespa.cl/acerca-de",
+    "@id": "https://www.totalservicesspa.cl/acerca-de#webpage",
+    "url": "https://www.totalservicesspa.cl/acerca-de",
     "name": "Acerca de Total Service SPA",
     "description": "Conoce Total Service SPA: líderes en arriendo de maquinaria pesada con más de una década de experiencia",
     "inLanguage": "es-CL",
     "isPartOf": {
-      "@id": "https://totalservicespa.cl/#website",
+      "@id": "https://www.totalservicesspa.cl/#website",
     },
     "about": {
-      "@id": "https://totalservicespa.cl/#organization",
+      "@id": "https://www.totalservicesspa.cl/#organization",
     },
     "breadcrumb": {
-      "@id": "https://totalservicespa.cl/acerca-de#breadcrumb",
+      "@id": "https://www.totalservicesspa.cl/acerca-de#breadcrumb",
     },
   };
 
@@ -63,13 +64,13 @@ export default function AcercaDe() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://totalservicespa.cl",
+        "item": "https://www.totalservicesspa.cl",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Acerca de",
-        "item": "https://totalservicespa.cl/acerca-de",
+        "item": "https://www.totalservicesspa.cl/acerca-de",
       },
     ],
   };

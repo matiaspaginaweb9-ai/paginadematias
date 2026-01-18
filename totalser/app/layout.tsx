@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description: "Total Service SPA: Líderes en arriendo de maquinaria pesada en Chile. Retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores 8,000 kg, rodillos, minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, piping HDPE, obras civiles. Ubicados en Quillota. Contacto: +56 9 6158 2373",
   keywords: ["arriendo maquinaria pesada", "arriendo maquinaria pesada Chile", "retroexcavadoras Chile", "retroexcavadoras arriendo", "excavadoras arriendo", "excavadora 20 ton", "grúas horquilla", "grúa horquilla diesel", "grúa horquilla gas", "maquinaria construcción", "maquinaria minería", "plantas tratamiento aguas", "mantención plantas tratamiento", "traslado residuos", "traslado residuos resolución sanitaria", "camión aspirador", "piping HDPE", "piping aceros", "obras civiles", "transporte industrial", "Total Service SPA", "arriendo equipos construcción", "maquinaria pesada Quillota", "maquinaria pesada Valparaíso", "servicios industriales Chile", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
-  authors: [{ name: "Total Service SPA", url: "https://totalservicespa.cl" }],
+  authors: [{ name: "Total Service SPA", url: "https://www.totalservicesspa.cl" }],
   creator: "Total Service SPA",
   publisher: "Total Service SPA",
   applicationName: "Total Service SPA",
@@ -33,24 +33,24 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://totalservicespa.cl"),
+  metadataBase: new URL("https://www.totalservicesspa.cl"),
   alternates: {
     canonical: "/",
     languages: {
-      "es-CL": "https://totalservicespa.cl",
-      "es": "https://totalservicespa.cl",
+      "es-CL": "https://www.totalservicesspa.cl",
+      "es": "https://www.totalservicesspa.cl",
     },
   },
   openGraph: {
     title: "Total Service SPA - Arriendo de Maquinaria Pesada | Construcción y Minería",
     description: "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla y más equipos en excelente estado. Operadores calificados, servicio de traslado incluido.",
-    url: "https://totalservicespa.cl",
+    url: "https://www.totalservicesspa.cl",
     siteName: "Total Service SPA",
     locale: "es_CL",
     type: "website",
     images: [
       {
-        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
         alt: "Total Service SPA - Maquinaria Pesada para Construcción y Minería",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Total Service SPA - Arriendo de Maquinaria Pesada",
     description: "Arriendo de maquinaria pesada para construcción, minería e infraestructura. Equipos modernos con operadores calificados. Contacto: +56 9 6158 2373",
-    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
+    images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
     creator: "@totalservicespa",
   },
   robots: {
@@ -83,9 +83,17 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
+  manifest: "/manifest.json",
   verification: {
     google: "verification_token_google",
     yandex: "verification_token_yandex",
+  },
+  other: {
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "apple-mobile-web-app-title": "Total Service SPA",
+    "theme-color": "#FF6B35",
   },
 };
 
@@ -97,32 +105,46 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://totalservicespa.cl/#organization",
+    "@id": "https://www.totalservicesspa.cl/#organization",
     "name": "Total Service SPA",
-    "url": "https://totalservicespa.cl",
-    "logo": "https://totalservicespa.cl/images/logo%20web.png",
-    "image": "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+    "url": "https://www.totalservicesspa.cl",
+    "logo": "https://www.totalservicesspa.cl/images/logo%20web.png",
+    "image": "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
     "description": "Total Service SPA es una empresa especializada en terminación y acabado de edificios, servicios industriales y arriendo de maquinaria pesada. Iniciamos operaciones en 2017. Ofrecemos retroexcavadoras, excavadoras 20 ton, grúas horquilla, camiones aspiradores, rodillos y minicargadores. Servicios industriales, mantención de plantas de tratamiento, traslado de residuos con resolución sanitaria, proyectos piping HDPE y aceros, obras civiles, transporte. Ubicados en Quillota, Región de Valparaíso.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+56961582373",
-      "contactType": "customer service",
-      "availableLanguage": ["es", "Spanish"],
-      "areaServed": "CL",
-    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+56961582373",
+        "contactType": "customer service",
+        "availableLanguage": ["es", "Spanish"],
+        "areaServed": "CL",
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "TSERVICESSPA@GMAIL.COM",
+        "contactType": "customer service",
+        "availableLanguage": ["es", "Spanish"],
+        "areaServed": "CL",
+      },
+    ],
     "sameAs": [],
+    "foundingDate": "2017-06-01",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "10-50",
+    },
   };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://totalservicespa.cl/#localbusiness",
+    "@id": "https://www.totalservicesspa.cl/#localbusiness",
     "name": "Total Service SPA",
     "image": [
-      "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
-      "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.43.jpeg",
+      "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+      "https://www.totalservicesspa.cl/images/Mantenci%C3%B3n%20de%20Plantas.png",
     ],
-    "url": "https://totalservicespa.cl",
+    "url": "https://www.totalservicesspa.cl",
     "telephone": "+56961582373",
     "email": "TSERVICESSPA@GMAIL.COM",
     "address": {
@@ -239,13 +261,20 @@ export default function RootLayout({
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://totalservicespa.cl",
+        "item": "https://www.totalservicesspa.cl",
       },
     ],
   };
 
   return (
     <html lang="es">
+      <head>
+        <meta name="theme-color" content="#FF6B35" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Total Service SPA" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

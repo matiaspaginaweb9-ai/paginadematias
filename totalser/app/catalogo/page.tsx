@@ -4,22 +4,23 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.totalservicesspa.cl"),
   title: "Catálogo de Maquinaria Pesada",
   description: "Catálogo completo de maquinaria pesada disponible: camión aspirador, retro excavadoras, excavadoras, grúas horquillas. Contacto: +56 9 6158 2373",
   keywords: ["catálogo maquinaria pesada", "arriendo retroexcavadora", "arriendo excavadora 20 ton", "grúa horquilla diesel", "camión aspirador", "rodillo tripulado", "minicargador bobcat", "dragado plantas tratamiento"],
   alternates: {
-    canonical: "https://totalservicespa.cl/catalogo",
+    canonical: "https://www.totalservicesspa.cl/catalogo",
   },
   openGraph: {
     title: "Catálogo de Maquinaria Pesada - Total Service SPA",
     description: "Catálogo completo de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores y más equipos",
-    url: "https://totalservicespa.cl/catalogo",
+    url: "https://www.totalservicesspa.cl/catalogo",
     siteName: "Total Service SPA",
     locale: "es_CL",
     type: "website",
     images: [
       {
-        url: "https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
+        url: "https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg",
         width: 1200,
         height: 630,
         alt: "Catálogo de Maquinaria Pesada Total Service SPA",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Catálogo de Maquinaria Pesada - Total Service SPA",
     description: "Catálogo completo de maquinaria pesada disponible para arriendo",
-    images: ["https://totalservicespa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
+    images: ["https://www.totalservicesspa.cl/images/WhatsApp%20Image%202026-01-15%20at%2015.19.44.jpeg"],
   },
 };
 
@@ -59,8 +60,10 @@ export default function Catalogo() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
+    "@id": "https://www.totalservicesspa.cl/catalogo#itemlist",
     "name": "Catálogo de Maquinaria Pesada - Total Service SPA",
     "description": "Catálogo completo de maquinaria pesada disponible para arriendo",
+    "url": "https://www.totalservicesspa.cl/catalogo",
     "itemListElement": [
       {
         "@type": "ListItem",
@@ -154,13 +157,13 @@ export default function Catalogo() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://totalservicespa.cl",
+        "item": "https://www.totalservicesspa.cl",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Catálogo",
-        "item": "https://totalservicespa.cl/catalogo",
+        "item": "https://www.totalservicesspa.cl/catalogo",
       },
     ],
   };
@@ -223,7 +226,7 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="/images/WhatsApp Image 2026-01-15 at 15.19.43.jpeg" 
+                  src="/images/Mantención de Plantas.png" 
                   alt="Mantención de plantas de tratamiento de aguas - Total Service SPA" 
                   fill
                   className="object-contain"
