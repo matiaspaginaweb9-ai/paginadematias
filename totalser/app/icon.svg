@@ -1,5 +1,5 @@
 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Total Service SPA - Arriendo de Maquinaria Pesada</title>
   <rect width="100" height="100" fill="#FF6B35" rx="12"/>
-  <text x="8" y="62" fontFamily="Arial, sans-serif" fontSize="36" fontStyle="italic" fontWeight="700" fill="white">T</text>
-  <text x="38" y="62" fontFamily="Arial, sans-serif" fontSize="22" fontWeight="700" fill="white" letterSpacing="1">S</text>
+  <text x="50" y="80" fontFamily="Arial, sans-serif" fontSize="95" fontStyle="italic" fontWeight="900" fill="white" textAnchor="middle" letterSpacing="-5" dominantBaseline="central">TS</text>
 </svg>
