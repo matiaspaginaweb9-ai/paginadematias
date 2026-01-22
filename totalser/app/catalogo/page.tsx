@@ -365,8 +365,8 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                  alt="Grúa horquilla Diesel - Total Services SPA" 
+                  src="/images/grudisiel.jpg" 
+                  alt="Grúa horquilla Diesel 3 Ton - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -400,8 +400,8 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" 
-                  alt="Grúa horquilla Gas-Bencina - Total Services SPA" 
+                  src="/images/bencinagrua.jpg" 
+                  alt="Grúa horquilla Gas-Bencina 2.5 Ton - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -435,8 +435,8 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                  alt="Rodillo tripulado - Total Services SPA" 
+                  src="/images/rodillo.jpeg" 
+                  alt="Rodillo tripulado BOMAG 120 - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -470,8 +470,8 @@ export default function Catalogo() {
             <div className="w-full md:w-2/5">
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" 
-                  alt="Minicargador - Total Services SPA" 
+                  src="/images/minicargador.jpg" 
+                  alt="Minicargador BOBCAT - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
