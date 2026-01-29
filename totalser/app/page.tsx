@@ -193,7 +193,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
-              Total Services SPA: Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, camión ampliroll, rodillos, minicargadores y más equipos modernos con operadores calificados.
+              Total Services SPA: Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, camiones ampliroll, rodillos tripulados, minicargadores y más equipos modernos con operadores calificados.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
@@ -309,7 +309,7 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-xl">Arriendo de Maquinaria Pesada</CardTitle>
                   <CardDescription className="text-sm">
-                    Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, rodillos, minicargadores. Con operadores calificados.
+                    Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, rodillos tripulados, minicargadores. Con operadores calificados.
                   </CardDescription>
                 </CardHeader>
               </Card>

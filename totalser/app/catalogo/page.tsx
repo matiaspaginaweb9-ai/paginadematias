@@ -70,7 +70,7 @@ export default function Catalogo() {
         "position": 1,
         "item": {
           "@type": "Product",
-          "name": "Camión Aspirador",
+          "name": "Camiones Aspiradores",
           "description": "Arriendo de camión aspirador para traslado de residuos",
         },
       },
@@ -79,7 +79,7 @@ export default function Catalogo() {
         "position": 2,
         "item": {
           "@type": "Product",
-          "name": "Camión Ampliroll",
+          "name": "Camiones Ampliroll",
           "description": "Arriendo de camión ampliroll para transporte de residuos no peligrosos",
         },
       },
@@ -88,7 +88,7 @@ export default function Catalogo() {
         "position": 3,
         "item": {
           "@type": "Product",
-          "name": "Retro Excavadora",
+          "name": "Retroexcavadoras",
           "description": "Arriendo de retro excavadoras con operador y combustible incluido",
         },
       },
@@ -97,7 +97,7 @@ export default function Catalogo() {
         "position": 4,
         "item": {
           "@type": "Product",
-          "name": "Excavadora",
+          "name": "Excavadoras",
           "description": "Arriendo de excavadoras con operador, combustible y traslado incluido",
         },
       },
@@ -106,8 +106,8 @@ export default function Catalogo() {
         "position": 5,
         "item": {
           "@type": "Product",
-          "name": "Grúa Horquilla Diesel",
-          "description": "Arriendo de grúa horquilla diesel con traslado incluido",
+          "name": "Grúas Horquilla",
+          "description": "Arriendo de grúas horquilla con traslado incluido",
         },
       },
       {
@@ -115,8 +115,8 @@ export default function Catalogo() {
         "position": 6,
         "item": {
           "@type": "Product",
-          "name": "Grúa Horquilla Gas-Bencina",
-          "description": "Arriendo de grúa horquilla gas-bencina con traslado incluido",
+          "name": "Rodillos Tripulados",
+          "description": "Arriendo de rodillo tripulado para compactación",
         },
       },
       {
@@ -124,22 +124,13 @@ export default function Catalogo() {
         "position": 7,
         "item": {
           "@type": "Product",
-          "name": "Rodillo Tripulado",
-          "description": "Arriendo de rodillo tripulado para compactación",
-        },
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "item": {
-          "@type": "Product",
-          "name": "Minicargador",
+          "name": "Minicargadores",
           "description": "Arriendo de minicargador con operador, combustible y traslado incluido",
         },
       },
       {
         "@type": "ListItem",
-        "position": 9,
+        "position": 8,
         "item": {
           "@type": "Product",
           "name": "Dragado de Plantas de Tratamiento",
@@ -148,7 +139,7 @@ export default function Catalogo() {
       },
       {
         "@type": "ListItem",
-        "position": 10,
+        "position": 9,
         "item": {
           "@type": "Product",
           "name": "Mantención de Plantas de Tratamiento",
@@ -272,7 +263,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/camion aspirador.png" 
-                  alt="Camión aspirador - Total Services SPA" 
+                  alt="Camiones aspiradores - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -283,7 +274,7 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Camión Aspirador</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Camiones Aspiradores</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
                   <p>Arriendo de camión aspirador para traslado de residuos industriales. Servicio certificado con resolución sanitaria vigente.</p>
                   <p>Equipos modernos disponibles para industrias, plantas de tratamiento y proyectos de construcción.</p>
@@ -306,7 +297,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/camion%20ampliroll.jpeg" 
-                  alt="Camión ampliroll - Total Services SPA" 
+                  alt="Camiones ampliroll - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -317,7 +308,7 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Camión Ampliroll</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Camiones Ampliroll</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
                   <p>Arriendo de camión ampliroll para transporte de residuos no peligrosos. Contenedores intercambiables para escombros, residuos industriales y construcción.</p>
                   <p>Servicio con resolución sanitaria vigente. Disponible para Quillota, Valparaíso y todo Chile.</p>
@@ -340,7 +331,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/retroescavadora.jpg" 
-                  alt="Retro excavadoras - Total Services SPA" 
+                  alt="Retroexcavadoras - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -351,7 +342,7 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Retro Excavadoras</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Retroexcavadoras</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
                   <p>Arriendo de retro excavadoras incluye operador calificado y combustible. Equipos modernos en excelente estado para construcción y minería.</p>
                   <p>Incluye traslado en valor mensual. Servicio disponible en Quillota, Valparaíso y toda la región. Cotización personalizada según tus necesidades.</p>
@@ -374,7 +365,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/excavadora.png" 
-                  alt="Excavadora - Total Services SPA" 
+                  alt="Excavadoras - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -385,14 +376,14 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Excavadora</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Excavadoras</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
-                  <p>Arriendo de excavadora incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
+                  <p>Arriendo de excavadoras incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para obras de gran envergadura en construcción y minería.</p>
                 </div>
               </div>
               <div className="mt-4">
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
-                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20excavadora.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20excavadoras.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
                     Consultar
                   </a>
                 </Button>
@@ -407,7 +398,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/grudisiel.jpg" 
-                  alt="Grúa horquilla Diesel - Total Services SPA" 
+                  alt="Grúas horquilla - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -418,49 +409,15 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla Diesel</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúas Horquilla</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
-                  <p>Arriendo de grúa horquilla diesel para manejo de carga en almacenes y construcción.</p>
-                  <p>Incluye traslado en valor mensual.</p>
+                  <p>Arriendo de grúas horquilla para manejo de carga en almacenes y construcción.</p>
+                  <p>Incluye traslado en valor mensual. Consulta disponibilidad.</p>
                 </div>
               </div>
               <div className="mt-4">
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
-                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20gr%C3%BAa%20horquilla%20diesel.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
-                    Consultar
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-          <div className="flex flex-col md:flex-row gap-4 p-4">
-            <div className="w-full md:w-2/5">
-              <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
-                <Image 
-                  src="/images/bencinagrua.jpg" 
-                  alt="Grúa horquilla Gas-Bencina - Total Services SPA" 
-                  fill
-                  className="object-contain"
-                  unoptimized
-                  loading="lazy"
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                />
-              </div>
-            </div>
-            <div className="w-full md:w-3/5 flex flex-col justify-between">
-              <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Grúa Horquilla Gas-Bencina</h2>
-                <div className="space-y-2 text-gray-700 text-sm">
-                  <p>Arriendo de grúa horquilla gas-bencina para manejo de carga en almacenes y construcción.</p>
-                  <p>Sin operador sin combustible. Incluye traslado en valor mensual.</p>
-                </div>
-              </div>
-              <div className="mt-4">
-                <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
-                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20gr%C3%BAa%20horquilla%20gas-bencina.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20gr%C3%BAas%20horquilla.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
                     Consultar
                   </a>
                 </Button>
@@ -475,7 +432,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/rodillo.jpeg" 
-                  alt="Rodillo tripulado - Total Services SPA" 
+                  alt="Rodillos tripulados - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -486,15 +443,15 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Rodillo Tripulado</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Rodillos Tripulados</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
-                  <p>Arriendo de rodillo tripulado para compactación de suelos en obras civiles.</p>
+                  <p>Arriendo de rodillos tripulados para compactación de suelos en obras civiles.</p>
                   <p>Incluye traslado en valor mensual. Sin operador sin combustible.</p>
                 </div>
               </div>
               <div className="mt-4">
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
-                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20del%20rodillo%20tripulado.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20rodillos%20tripulados.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
                     Consultar
                   </a>
                 </Button>
@@ -509,7 +466,7 @@ export default function Catalogo() {
               <div className="relative w-full h-40 sm:h-48 md:h-52 rounded-lg overflow-hidden bg-gray-100">
                 <Image 
                   src="/images/minicargador.jpg" 
-                  alt="Minicargador - Total Services SPA" 
+                  alt="Minicargadores - Total Services SPA" 
                   fill
                   className="object-contain"
                   unoptimized
@@ -520,14 +477,14 @@ export default function Catalogo() {
             </div>
             <div className="w-full md:w-3/5 flex flex-col justify-between">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Minicargador</h2>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3">Minicargadores</h2>
                 <div className="space-y-2 text-gray-700 text-sm">
-                  <p>Arriendo de minicargador incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
+                  <p>Arriendo de minicargadores incluye operador calificado, combustible y servicio de traslado en valor mensual. Ideal para espacios reducidos y trabajos de precisión.</p>
                 </div>
               </div>
               <div className="mt-4">
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shadow-md">
-                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20del%20minicargador.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20arriendo%20de%20minicargadores.%20¿Podr%C3%ADan%20enviarme%20m%C3%A1s%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">
                     Consultar
                   </a>
                 </Button>

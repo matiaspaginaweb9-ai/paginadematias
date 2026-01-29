@@ -214,7 +214,7 @@ export default function RootLayout({
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Arriendo de Retroexcavadora",
+            "name": "Arriendo de Retroexcavadoras",
             "description": "Arriendo de retroexcavadora con operador y combustible incluido",
             "provider": {
               "@type": "LocalBusiness",
@@ -238,7 +238,7 @@ export default function RootLayout({
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Arriendo de Grúa Horquilla",
+            "name": "Arriendo de Grúas Horquilla",
             "description": "Arriendo de grúa horquilla diesel 3 ton y gas-bencina 2.5 ton",
             "provider": {
               "@type": "LocalBusiness",
