@@ -188,14 +188,17 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-4">
               <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
-                Arriendo de Maquinaria Pesada en Chile
+                Total Services SPA
               </span>
             </h1>
-            <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto px-4">
-              Total Services SPA: Líderes en arriendo de maquinaria pesada para construcción, minería e infraestructura. Retroexcavadoras, excavadoras, grúas horquilla, camiones aspiradores, camiones ampliroll, rodillos tripulados, minicargadores y más equipos modernos con operadores calificados.
+            <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto px-4">
+              Total Services SPA ofrece una amplia gama de servicios industriales para la agroindustria, minería y construcción de acuerdo a los requerimientos y necesidades de cada uno de nuestros clientes. Nuestra reconocida calidad se hace presente en todos nuestros procesos, servicios y contratos, los que desarrollamos y ejecutamos en línea con los más altos estándares de seguridad y sustentabilidad y eficiencia operacional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+                <Link href="/servicios">Ver todos los servicios</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 <Link href="/catalogo" className="flex items-center justify-center">
                   Ver Catálogo
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
@@ -212,15 +215,6 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">NUESTROS SERVICIOS</h2>
-              <p className="text-lg sm:text-xl text-gray-600 px-4 max-w-3xl mx-auto">Total Services SPA ofrece una amplia gama de servicios industriales para la minería de Chile de acuerdo a los requerimientos y necesidades de cada uno de sus clientes. Nuestra reconocida calidad se hace presente en todos nuestros procesos, servicios y contratos, los que desarrollamos y ejecutamos en línea con los más altos estándares de seguridad y sustentabilidad, eficiencia operacional e innovación tecnológica.</p>
-              <div className="mt-6">
-                <Button asChild variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white">
-                  <Link href="/servicios">Ver todos los servicios</Link>
-                </Button>
-              </div>
-            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
