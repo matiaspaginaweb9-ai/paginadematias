@@ -238,7 +238,7 @@ export default function Home() {
               </article>
               <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
-                  <Image src="/images/WhatsApp Image 2026-01-15 at 16.05.57.jpeg" alt="Transporte industrial - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                  <Image src="/images/transporte.png" alt="Transporte industrial - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
                 <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
