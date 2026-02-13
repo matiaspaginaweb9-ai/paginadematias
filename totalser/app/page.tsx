@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { HeroCarousel } from "@/components/hero-carousel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -170,52 +170,12 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
       />
       <div className="min-h-screen">
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-[600px] flex items-center">
-        <div className="absolute inset-0">
-          <Image 
-            src="/images/Mantención de Plantas.png" 
-            alt="Servicios industriales Total Services SPA" 
-            fill
-            className="object-cover opacity-30"
-            priority
-            fetchPriority="high"
-            unoptimized
-            sizes="100vw"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-gray-900/80"></div>
-        <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-4">
-              <span className="bg-gradient-to-r from-[#FF6B35] to-[#FF5722] bg-clip-text text-transparent">
-                Total Services SPA
-              </span>
-            </h1>
-            <p className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto px-4">
-              Total Services SPA ofrece una amplia gama de servicios industriales para la agroindustria, minería y construcción de acuerdo a los requerimientos y necesidades de cada uno de nuestros clientes. Nuestra reconocida calidad se hace presente en todos nuestros procesos, servicios y contratos, los que desarrollamos y ejecutamos en línea con los más altos estándares de seguridad y sustentabilidad y eficiencia operacional.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
-                <Link href="/servicios">Ver todos los servicios</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
-                <Link href="/catalogo" className="flex items-center justify-center">
-                  Ver Catálogo
-                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
-                <Link href="/acerca-de">Conocer Más</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroCarousel />
 
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
                 <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
                   <Image src="/images/Mantención de Plantas.png" alt="Mantención de plantas de tratamiento de aguas - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
@@ -305,22 +265,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+            <h2 className="text-xl sm:text-3xl md:text-5xl font-bold px-2 sm:px-4">
               ¿Listo para comenzar tu proyecto?
             </h2>
-            <p className="text-base sm:text-xl text-gray-300 px-4">
+            <p className="text-sm sm:text-base md:text-xl text-gray-300 px-2 sm:px-4">
               Contáctanos por WhatsApp o email y obtén una cotización personalizada para arriendo de maquinaria pesada. Servicio disponible en Quillota y toda la región de Valparaíso.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-2 sm:px-4">
+              <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF5722] text-white text-sm sm:text-lg px-6 sm:px-8 py-3 min-h-[44px] w-full sm:w-auto rounded-md">
                 <a href="https://wa.me/56961582373">
                   Contactar por WhatsApp
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+              <Button asChild size="lg" variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white text-sm sm:text-lg px-6 sm:px-8 py-3 min-h-[44px] w-full sm:w-auto rounded-md">
                 <Link href="/catalogo">Ver Catálogo Completo</Link>
               </Button>
             </div>
