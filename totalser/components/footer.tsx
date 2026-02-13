@@ -45,15 +45,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Conocer más sobre la empresa">
+                <Link href="/servicios" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ver servicios">
                   <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Acerca de
+                  Servicios
                 </Link>
               </li>
               <li>
                 <Link href="/catalogo" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ver catálogo de maquinaria">
                   <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Catálogo
+                </Link>
+              </li>
+              <li>
+                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Conocer más sobre la empresa">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Acerca de
                 </Link>
               </li>
             </ul>

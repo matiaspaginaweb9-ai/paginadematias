@@ -61,6 +61,13 @@ export function Header() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
+                  <Link href="/servicios" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Ver servicios">
+                    Servicios
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
                   <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Conocer más sobre la empresa">
                     Acerca de
                   </Link>
@@ -104,6 +111,14 @@ export function Header() {
               aria-label="Ver catálogo de maquinaria"
             >
               Catálogo
+            </Link>
+            <Link 
+              href="/servicios" 
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="Ver servicios"
+            >
+              Servicios
             </Link>
             <Link 
               href="/acerca-de" 

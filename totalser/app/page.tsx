@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Truck, Wrench, Shield, Clock, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -214,124 +213,99 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">Nuestros Servicios</h2>
-              <p className="text-lg sm:text-xl text-gray-600 px-4">Soluciones completas para construcción, minería e infraestructura. Equipos modernos con operadores calificados y servicio de traslado incluido.</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4">NUESTROS SERVICIOS</h2>
+              <p className="text-lg sm:text-xl text-gray-600 px-4 max-w-3xl mx-auto">Total Services SPA ofrece una amplia gama de servicios industriales para la minería de Chile de acuerdo a los requerimientos y necesidades de cada uno de sus clientes. Nuestra reconocida calidad se hace presente en todos nuestros procesos, servicios y contratos, los que desarrollamos y ejecutamos en línea con los más altos estándares de seguridad y sustentabilidad, eficiencia operacional e innovación tecnológica.</p>
+              <div className="mt-6">
+                <Button asChild variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white">
+                  <Link href="/servicios">Ver todos los servicios</Link>
+                </Button>
+              </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative w-full h-48">
-                  <Image 
-                    src="/images/Mantención de Plantas.png" 
-                    alt="Mantención de plantas de tratamiento de aguas - Total Services SPA" 
-                    fill
-                    className="object-cover"
-                    unoptimized
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/Mantención de Plantas.png" alt="Mantención de plantas de tratamiento de aguas - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">Mantención de Plantas de Tratamiento de Aguas</CardTitle>
-                  <CardDescription className="text-sm">
-                    Servicios especializados de mantenimiento preventivo y correctivo para plantas de tratamiento de aguas. Personal capacitado y equipos especializados.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative w-full h-48">
-                  <Image 
-                    src="/images/WhatsApp Image 2026-01-15 at 16.02.19.jpeg" 
-                    alt="Traslado de residuos con resolución sanitaria - Total Services SPA" 
-                    fill
-                    className="object-cover"
-                    unoptimized
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Mantención de Plantas de Tratamiento de Aguas</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Servicios especializados de mantenimiento preventivo y correctivo para plantas de tratamiento de aguas. Personal capacitado y equipos especializados.</p>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">Traslado de Residuos con Resolución Sanitaria</CardTitle>
-                  <CardDescription className="text-sm">
-                    Transporte seguro y certificado de residuos con resolución sanitaria vigente. Camión aspirador de capacidad. Certificaciones al día.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative w-full h-48">
-                  <Image 
-                    src="/images/WhatsApp Image 2026-01-15 at 16.02.56.jpeg" 
-                    alt="Proyectos piping HDPE y aceros - Total Services SPA" 
-                    fill
-                    className="object-cover"
-                    unoptimized
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+              </article>
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/WhatsApp Image 2026-01-15 at 16.02.19.jpeg" alt="Traslado de residuos con resolución sanitaria - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">Proyectos Piping HDPE y Aceros</CardTitle>
-                  <CardDescription className="text-sm">
-                    Instalación y mantenimiento profesional de sistemas de tuberías en HDPE y acero. Proyectos completos de piping industrial.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative w-full h-48">
-                  <Image 
-                    src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" 
-                    alt="Obras civiles e infraestructura - Total Services SPA" 
-                    fill
-                    className="object-cover"
-                    unoptimized
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Traslado de Residuos con Resolución Sanitaria</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Transporte seguro y certificado de residuos con resolución sanitaria vigente. Camión aspirador de capacidad. Certificaciones al día.</p>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">Obras Civiles e Infraestructura</CardTitle>
-                  <CardDescription className="text-sm">
-                    Construcción y desarrollo de proyectos de infraestructura civil. Maquinaria pesada para obras de gran envergadura en construcción y minería.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative w-full h-48">
-                  <Image 
-                    src="/images/WhatsApp Image 2026-01-15 at 16.04.17.jpeg" 
-                    alt="Arriendo de maquinaria pesada - Retroexcavadoras y excavadoras" 
-                    fill
-                    className="object-cover"
-                    unoptimized
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+              </article>
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/hippipe.png" alt="Proyectos piping HDPE y aceros - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">Arriendo de Maquinaria Pesada</CardTitle>
-                  <CardDescription className="text-sm">
-                    Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, rodillos tripulados, minicargadores. Con operadores calificados.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative w-full h-48">
-                  <Image 
-                    src="/images/WhatsApp Image 2026-01-15 at 16.05.57.jpeg" 
-                    alt="Transporte industrial y logística - Total Services SPA" 
-                    fill
-                    className="object-cover"
-                    unoptimized
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Proyectos Piping HDPE y Aceros</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Instalación y mantenimiento profesional de sistemas de tuberías en HDPE y acero. Proyectos completos de piping industrial.</p>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">Transporte Industrial</CardTitle>
-                  <CardDescription className="text-sm">
-                    Servicios de transporte especializado para construcción, minería e industria. Logística completa para tus proyectos.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
+              </article>
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" alt="Obras civiles e infraestructura - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                </div>
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Obras Civiles e Infraestructura</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Construcción y desarrollo de proyectos de infraestructura civil. Maquinaria pesada para obras de gran envergadura en construcción y minería.</p>
+                </div>
+              </article>
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/WhatsApp Image 2026-01-15 at 16.04.17.jpeg" alt="Arriendo de maquinaria pesada - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                </div>
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Arriendo de Maquinaria Pesada</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Amplia flota de maquinaria pesada disponible para arriendo: retroexcavadoras, excavadoras, grúas horquilla, rodillos tripulados, minicargadores. Con operadores calificados.</p>
+                </div>
+              </article>
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/WhatsApp Image 2026-01-15 at 16.05.57.jpeg" alt="Transporte industrial - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                </div>
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Transporte Industrial</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Servicios de transporte especializado para construcción, minería e industria. Logística completa para tus proyectos.</p>
+                </div>
+              </article>
+              <article className="overflow-hidden rounded-2xl sm:rounded-3xl bg-black shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative w-full h-52 sm:h-56 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
+                  <Image src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" alt="Ingeniería eléctrica - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                </div>
+                <div className="p-4 sm:p-5 rounded-b-2xl sm:rounded-b-3xl bg-black">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-[#FF6B35] leading-tight flex-1 min-w-0">Ingeniería Eléctrica</h3>
+                    <Link href="/servicios" className="shrink-0 px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Conocer</Link>
+                  </div>
+                  <p className="text-sm text-white/90 leading-relaxed">Diseño, instalación y mantenimiento de sistemas eléctricos industriales. Proyectos de electrificación, tableros y redes para construcción y minería.</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
