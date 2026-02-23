@@ -13,7 +13,7 @@ export function WhatsAppFloat() {
     >
       <div className="relative flex items-center gap-2 flex-row-reverse">
         <div className="bg-[#FF6B35] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-1 rounded-full shadow-lg animate-pulse whitespace-nowrap">
-          ¡Contáctame!
+          ¡Contáctanos!
         </div>
         <div className="bg-green-500 hover:bg-green-600 active:bg-green-700 rounded-full p-3 sm:p-4 min-w-[48px] min-h-[48px] flex items-center justify-center shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-110 active:scale-95 group-hover:rotate-12 flex-shrink-0">
           <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
