@@ -152,7 +152,7 @@ export default function Servicios() {
                 </article>
                 <article className="flex flex-col md:flex-row md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
                   <div className="relative w-full md:w-[48%] h-52 sm:h-60 md:h-auto md:min-h-[360px] shrink-0">
-                    <Image src="/images/WhatsApp Image 2026-01-15 at 16.03.38.jpeg" alt="Ingeniería eléctrica - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 48vw" />
+                    <Image src="/WhatsApp Image 2026-02-22 at 16.16.27.jpeg" alt="Ingeniería eléctrica - Total Services SPA" fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 768px) 100vw, 48vw" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent md:from-transparent md:via-transparent md:to-black/20" />
                   </div>
                   <div className="flex flex-col justify-center p-4 sm:p-6 md:p-8 md:pl-8 md:pr-10 flex-1">
