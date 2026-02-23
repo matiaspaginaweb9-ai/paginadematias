@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { Mail, Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Mail, Menu, X, ChevronDown } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -17,6 +17,10 @@ import { Logo } from "@/components/logo";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileEmpresaOpen, setMobileEmpresaOpen] = useState(false);
+  useEffect(() => {
+    if (!mobileMenuOpen) setMobileEmpresaOpen(false);
+  }, [mobileMenuOpen]);
 
   return (
     <header className="sticky top-0 z-50 w-full max-w-[100vw] min-w-0 border-b bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/80 shadow-sm">
@@ -187,17 +191,38 @@ export function Header() {
             >
               Servicios
             </Link>
-            <div className="border-b border-gray-100 pb-2 mb-2">
-              <span className="block px-3 sm:px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide">Empresa</span>
-              <Link href="/acerca-de" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Empresa</Link>
-              <Link href="/acerca-de/historia" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Historia</Link>
-              <Link href="/acerca-de/mision-vision" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Misión y Visión</Link>
-              <Link href="/acerca-de/riohs" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">RIOHS</Link>
-              <Link href="/acerca-de/politica-integrada" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Integrada</Link>
-              <Link href="/acerca-de/politica-rse" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política RSE</Link>
-              <Link href="/acerca-de/politica-inclusion" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Inclusión</Link>
-              <Link href="/acerca-de/politica-alcohol-drogas" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Alcohol y Drogas</Link>
-              <Link href="/acerca-de/politica-prevencion-delitos" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Prevención Delitos</Link>
+            <div className="border-b border-gray-100">
+              <button
+                type="button"
+                onClick={() => setMobileEmpresaOpen(!mobileEmpresaOpen)}
+                className="w-full flex items-center justify-between px-3 sm:px-4 py-3 min-h-[44px] rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base text-left"
+                aria-expanded={mobileEmpresaOpen}
+                aria-controls="mobile-empresa-menu"
+                id="mobile-empresa-trigger"
+              >
+                <span>Empresa</span>
+                <ChevronDown className={cn("w-5 h-5 shrink-0 transition-transform duration-200", mobileEmpresaOpen && "rotate-180")} />
+              </button>
+              <div
+                id="mobile-empresa-menu"
+                role="region"
+                aria-labelledby="mobile-empresa-trigger"
+                className={cn("grid overflow-hidden transition-all duration-200 ease-out", mobileEmpresaOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}
+              >
+                <div className="min-h-0">
+                  <div className="pl-4 pr-2 pb-2 pt-0 space-y-0.5">
+                    <Link href="/acerca-de" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Empresa</Link>
+                    <Link href="/acerca-de/historia" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Historia</Link>
+                    <Link href="/acerca-de/mision-vision" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Misión y Visión</Link>
+                    <Link href="/acerca-de/riohs" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">RIOHS</Link>
+                    <Link href="/acerca-de/politica-integrada" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Integrada</Link>
+                    <Link href="/acerca-de/politica-rse" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política RSE</Link>
+                    <Link href="/acerca-de/politica-inclusion" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Inclusión</Link>
+                    <Link href="/acerca-de/politica-alcohol-drogas" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Alcohol y Drogas</Link>
+                    <Link href="/acerca-de/politica-prevencion-delitos" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Prevención Delitos</Link>
+                  </div>
+                </div>
+              </div>
             </div>
             <Button asChild className="w-full mt-3 sm:mt-4 bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold text-sm sm:text-base py-2.5 sm:py-3">
               <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)} aria-label="Ver catálogo completo de maquinaria pesada">Ver Catálogo</Link>

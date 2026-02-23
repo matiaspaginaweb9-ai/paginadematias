@@ -18,14 +18,14 @@ export default function RiohsPage() {
           Total Services SPA está comprometida con la prevención de riesgos y la salud ocupacional. Nuestro Registro de Incidencias en Seguridad y Salud Ocupacional (RIOHS) forma parte del sistema de gestión que nos permite mejorar continuamente las condiciones de trabajo y garantizar un entorno seguro para nuestro equipo y para cada proyecto.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 pt-4">
-          <Button asChild className="bg-[#FF6B35] hover:bg-[#FF5722] text-white rounded-lg">
-            <a href={RIOHS_PDF_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+          <Button asChild className="bg-[#FF6B35] hover:bg-[#FF5722] text-white rounded-lg min-h-[44px] w-full sm:w-auto">
+            <a href={RIOHS_PDF_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[44px] py-2.5">
               <ExternalLink className="w-4 h-4 shrink-0" />
               Ver PDF
             </a>
           </Button>
-          <Button asChild variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-orange-50 rounded-lg">
-            <a href={RIOHS_PDF_URL} download="riohs.pdf" className="inline-flex items-center gap-2">
+          <Button asChild variant="outline" className="border-[#FF6B35] text-[#FF6B35] hover:bg-orange-50 rounded-lg min-h-[44px] w-full sm:w-auto">
+            <a href={RIOHS_PDF_URL} download="riohs.pdf" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto min-h-[44px] py-2.5">
               <FileDown className="w-4 h-4 shrink-0" />
               Descargar PDF
             </a>
