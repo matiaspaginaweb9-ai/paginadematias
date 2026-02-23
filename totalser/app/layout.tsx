@@ -309,7 +309,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-0 overflow-x-hidden w-full`}
       >
         <script
           type="application/ld+json"
@@ -324,7 +324,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <Header />
-        <main>{children}</main>
+        <main className="w-full min-w-0">{children}</main>
         <Footer />
         <WhatsAppFloat />
       </body>

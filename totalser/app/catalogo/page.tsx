@@ -42,16 +42,16 @@ const WhatsAppIcon = () => (
 );
 
 const ContactBar = () => (
-  <div className="bg-gray-800 text-white py-2.5 px-4 rounded-lg">
-    <div className="flex items-center justify-between flex-wrap gap-4">
-      <div className="flex items-center gap-2">
+  <div className="bg-gray-800 text-white py-3 px-4 sm:py-2.5 sm:px-4 rounded-lg w-full min-w-0">
+    <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+      <a href="https://wa.me/56961582373" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 min-h-[44px] sm:min-h-0 justify-center sm:justify-start">
         <WhatsAppIcon />
-        <span className="text-sm">+56 9 6158 2373</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <Mail className="w-4 h-4" />
-        <span className="text-sm">TSERVICESSPA@GMAIL.COM</span>
-      </div>
+        <span className="text-xs sm:text-sm truncate">+56 9 6158 2373</span>
+      </a>
+      <a href="mailto:TSERVICESSPA@GMAIL.COM" className="flex items-center gap-2 min-h-[44px] sm:min-h-0 justify-center sm:justify-start overflow-hidden">
+        <Mail className="w-4 h-4 shrink-0" />
+        <span className="text-xs sm:text-sm truncate break-all">TSERVICESSPA@GMAIL.COM</span>
+      </a>
     </div>
   </div>
 );
@@ -185,7 +185,7 @@ export default function Catalogo() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-6 space-y-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-6 min-w-0">
         <ContactBar />
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">

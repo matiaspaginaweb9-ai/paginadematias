@@ -39,27 +39,27 @@ export function Footer() {
             <h4 className="font-bold text-sm sm:text-base md:text-lg text-[#FF6B35]">Enlaces Rápidos</h4>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-300">
               <li>
-                <Link href="/" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ir al inicio">
-                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-2 sm:py-1" aria-label="Ir al inicio">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity shrink-0"></span>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ver servicios">
-                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/servicios" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-2 sm:py-1" aria-label="Ver servicios">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity shrink-0"></span>
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="/catalogo" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Ver catálogo de maquinaria">
-                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/catalogo" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-2 sm:py-1" aria-label="Ver catálogo de maquinaria">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity shrink-0"></span>
                   Catálogo
                 </Link>
               </li>
               <li>
-                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-1" aria-label="Conocer más sobre la empresa">
-                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Acerca de
+                <Link href="/acerca-de" className="hover:text-[#FF6B35] transition-colors duration-200 flex items-center gap-2 group py-2 sm:py-1" aria-label="Empresa">
+                  <span className="w-1.5 h-1.5 bg-[#FF6B35] rounded-full opacity-0 group-hover:opacity-100 transition-opacity shrink-0"></span>
+                  Empresa
                 </Link>
               </li>
             </ul>
@@ -73,7 +73,7 @@ export function Footer() {
                   href="https://wa.me/56961582373" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-1"
+                  className="flex items-center gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-2 sm:py-1"
                 >
                   <div className="p-1.5 sm:p-2 bg-green-500/20 rounded-lg group-hover:bg-green-500/30 transition-colors flex-shrink-0">
                     <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ export function Footer() {
               <li>
                 <a 
                   href="mailto:TSERVICESSPA@GMAIL.COM" 
-                  className="flex items-center gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-1"
+                  className="flex items-center gap-2.5 sm:gap-3 hover:text-[#FF6B35] transition-all duration-200 group py-2 sm:py-1"
                 >
                   <div className="p-1.5 sm:p-2 bg-blue-500/20 rounded-lg group-hover:bg-blue-500/30 transition-colors flex-shrink-0">
                     <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-400" />

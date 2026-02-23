@@ -82,7 +82,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Realizamos mantención preventiva y correctiva de plantas de tratamiento de aguas residuales e industriales. Incluye limpieza de sedimentadores, revisión de bombas y equipos, dragado de lodos, desinfección y monitoreo de parámetros. Contamos con personal certificado y equipos especializados para garantizar el cumplimiento normativo y la operación continua de sus instalaciones.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20mantenci%C3%B3n%20de%20plantas%20de%20tratamiento%20de%20aguas." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20mantenci%C3%B3n%20de%20plantas%20de%20tratamiento%20de%20aguas." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
                 <article className="flex flex-col md:flex-row-reverse md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
@@ -95,7 +95,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Ofrecemos transporte y disposición de residuos con resolución sanitaria vigente. Contamos con camión aspirador y flota autorizada para el traslado de residuos líquidos, lodos y residuos industriales. Todas las operaciones se realizan con trazabilidad completa y certificaciones al día para la región de Valparaíso y zonas aledañas.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20traslado%20de%20residuos%20con%20resoluci%C3%B3n%20sanitaria." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20traslado%20de%20residuos%20con%20resoluci%C3%B3n%20sanitaria." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
                 <article className="flex flex-col md:flex-row md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
@@ -108,7 +108,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Ejecutamos proyectos integrales de tuberías en polietileno de alta densidad (HDPE) y acero: diseño, suministro, instalación por termofusión o soldadura, y pruebas de presión. Atendemos redes de agua potable, aguas servidas, minería e industria. Incluye obras de bypass, rehabilitación y nuevas líneas con estándares de calidad y plazos acordados.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20proyectos%20de%20piping%20HDPE%20y%20aceros." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20proyectos%20de%20piping%20HDPE%20y%20aceros." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
                 <article className="flex flex-col md:flex-row-reverse md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
@@ -121,7 +121,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Desarrollamos obras civiles y de infraestructura para construcción y minería: movimientos de tierra, excavaciones, compactación, instalación de redes y obras de soporte. Disponemos de maquinaria pesada y equipos de compactación para proyectos de diversa envergadura, con protocolos de seguridad y cumplimiento de plazos.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20obras%20civiles%20e%20infraestructura." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20obras%20civiles%20e%20infraestructura." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
                 <article className="flex flex-col md:flex-row md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
@@ -134,7 +134,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Ponemos a disposición una amplia flota de maquinaria pesada para arriendo: retroexcavadoras, excavadoras 20 ton, grúas horquilla diesel y a gas, rodillos tripulados, minicargadores y camiones. Incluimos operador calificado, combustible y traslado en modalidad mensual. Ideal para construcción, minería e infraestructura en Quillota, Valparaíso y todo Chile.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20arrendar%20maquinaria%20pesada." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20arrendar%20maquinaria%20pesada." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
                 <article className="flex flex-col md:flex-row-reverse md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
@@ -147,7 +147,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Brindamos transporte industrial especializado para la minería, construcción e industria: movilización de equipos, materiales y carga especial. Coordinamos rutas, permisos y plazos según las necesidades del proyecto. Flota propia y logística integrada para asegurar entregas en tiempo y forma.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20transporte%20industrial." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20transporte%20industrial." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
                 <article className="flex flex-col md:flex-row md:items-stretch rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-black">
@@ -160,7 +160,7 @@ export default function Servicios() {
                     <p className="text-sm sm:text-base text-white/90 leading-relaxed mb-4">
                       Ofrecemos diseño, instalación y mantenimiento de sistemas eléctricos industriales: tableros de fuerza y control, redes de distribución, iluminación y automatización. Desarrollamos proyectos de electrificación para faenas mineras, plantas industriales y obras de construcción, con normativa vigente y estándares de seguridad.
                     </p>
-                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20ingenier%C3%ADa%20el%C3%A9ctrica%20industrial." className="self-start px-4 py-2 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
+                    <a href="https://wa.me/56961582373?text=Hola%2C%20me%20interesa%20ingenier%C3%ADa%20el%C3%A9ctrica%20industrial." className="self-start min-h-[44px] inline-flex items-center px-5 py-2.5 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-100 transition-colors">Consultar</a>
                   </div>
                 </article>
               </div>

@@ -8,6 +8,8 @@ import {
   NavigationMenuList,
   NavigationMenuItem,
   NavigationMenuLink,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -17,7 +19,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/80 shadow-sm">
+    <header className="sticky top-0 z-50 w-full max-w-[100vw] min-w-0 border-b bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/80 shadow-sm">
       <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-2 sm:py-2.5 px-3 sm:px-4">
         <div className="container mx-auto flex flex-row items-center justify-between gap-2 sm:gap-4 text-xs sm:text-sm">
           <a 
@@ -67,11 +69,76 @@ export function Header() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/acerca-de" className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50")} aria-label="Conocer más sobre la empresa">
-                    Acerca de
-                  </Link>
-                </NavigationMenuLink>
+                <NavigationMenuTrigger className={cn("text-sm font-medium transition-all duration-300 hover:text-orange-500 px-3 py-2 rounded-md hover:bg-orange-50 bg-transparent border-0 shadow-none focus:bg-orange-50")}>
+                  Empresa
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[min(280px,calc(100vw-2rem))] gap-1 p-2 md:w-[320px]">
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Empresa
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/historia" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Historia
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/mision-vision" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Misión y Visión
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/riohs" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          RIOHS
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/politica-integrada" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Política Integrada
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/politica-rse" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Política RSE
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/politica-inclusion" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Política Inclusión
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/politica-alcohol-drogas" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Política Alcohol y Drogas
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/acerca-de/politica-prevencion-delitos" className="block select-none rounded-md px-3 py-2.5 text-sm font-medium outline-none hover:bg-orange-50 hover:text-orange-600">
+                          Política Prevención Delitos
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  </ul>
+                </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -81,9 +148,9 @@ export function Header() {
         </nav>
 
         <button
-          className="md:hidden p-2 -mr-2 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors flex-shrink-0"
+          className="md:hidden min-w-[44px] min-h-[44px] p-2 -mr-2 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors flex-shrink-0 flex items-center justify-center"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label="Abrir o cerrar menú"
         >
           {mobileMenuOpen ? (
             <X className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -120,14 +187,18 @@ export function Header() {
             >
               Servicios
             </Link>
-            <Link 
-              href="/acerca-de" 
-              className="block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg hover:bg-orange-50 hover:text-orange-600 active:bg-orange-100 transition-all duration-200 font-medium text-sm sm:text-base"
-              onClick={() => setMobileMenuOpen(false)}
-              aria-label="Conocer más sobre la empresa"
-            >
-              Acerca de
-            </Link>
+            <div className="border-b border-gray-100 pb-2 mb-2">
+              <span className="block px-3 sm:px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wide">Empresa</span>
+              <Link href="/acerca-de" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Empresa</Link>
+              <Link href="/acerca-de/historia" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Historia</Link>
+              <Link href="/acerca-de/mision-vision" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Misión y Visión</Link>
+              <Link href="/acerca-de/riohs" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">RIOHS</Link>
+              <Link href="/acerca-de/politica-integrada" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Integrada</Link>
+              <Link href="/acerca-de/politica-rse" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política RSE</Link>
+              <Link href="/acerca-de/politica-inclusion" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Inclusión</Link>
+              <Link href="/acerca-de/politica-alcohol-drogas" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Alcohol y Drogas</Link>
+              <Link href="/acerca-de/politica-prevencion-delitos" onClick={() => setMobileMenuOpen(false)} className="block px-3 sm:px-4 py-3 min-h-[44px] flex items-center rounded-lg hover:bg-orange-50 hover:text-orange-600 font-medium text-sm">Política Prevención Delitos</Link>
+            </div>
             <Button asChild className="w-full mt-3 sm:mt-4 bg-[#FF6B35] hover:bg-[#FF5722] text-white font-semibold text-sm sm:text-base py-2.5 sm:py-3">
               <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)} aria-label="Ver catálogo completo de maquinaria pesada">Ver Catálogo</Link>
             </Button>
